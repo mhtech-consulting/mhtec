@@ -18,13 +18,14 @@ class I18n {
 
     async loadTranslations(lang) {
         try {
-            const response = await fetch(`assets/js/lang/${lang}.json`);
+            const response = await fetch(`assets/js/lang/${lang}.json?v=2`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             this.translations = await response.json();
             this.currentLang = lang;
             localStorage.setItem('mhtech_lang', lang);
+            this.updateLanguageButton();
         } catch (error) {
             console.error('Erreur lors du chargement des traductions:', error);
             // Fallback vers français si erreur
