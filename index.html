@@ -1659,9 +1659,9 @@
                             Cybersecurite et les solutions IT pour entreprises.</p>
                     </div>
                     <div class="newsletter-one__right">
-                        <form class="newsletter-one__form">
+                        <form class="newsletter-one__form contact-form-validated" action="assets/inc/sendemail.php" method="post">
                             <div class="newsletter-one__input">
-                                <input type="email" placeholder="Entrez votre email" data-i18n="newsletter.email_placeholder">
+                                <input type="email" name="email" placeholder="Entrez votre email" data-i18n-placeholder="newsletter.email_placeholder" required>
                             </div>
                             <button type="submit" class="thm-btn" data-i18n="newsletter.subscribe_button">S'abonner <span class="fas fa-arrow-right"></span>
                             </button>
@@ -1670,6 +1670,7 @@
                                 <label for="skipper"><span></span>by Subscribing. Your Accept Privacy
                                     policy</label>
                             </div>
+                            <div class="result"></div>
                         </form>
                     </div>
                 </div>

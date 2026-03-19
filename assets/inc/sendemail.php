@@ -14,10 +14,28 @@ try {
 	$website = isset($_POST['website']) ? preg_replace("/[^\.\-\_\@a-zA-Z0-9]/", "", $_POST['website']) : "";
 	$message = isset($_POST['message']) ? preg_replace("/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message']) : "";
 	$requestType = isset($_POST['request_type']) ? preg_replace("/[^a-zA-Z0-9_]/", "", $_POST['request_type']) : "";
+	$adminEmail = trim((string) Env::get('ADMIN_EMAIL', 'contact@mhtechconsulting.com'));
+
+	if ($adminEmail === '' || stripos($adminEmail, 'scriptfusions') !== false) {
+		$adminEmail = 'contact@mhtechconsulting.com';
+	}
 
 	// Récupérer IP et User Agent
 	$ipAddress = $_SERVER['REMOTE_ADDR'] ?? null;
 	$userAgent = $_SERVER['HTTP_USER_AGENT'] ?? null;
+	$refererPath = parse_url($_SERVER['HTTP_REFERER'] ?? '', PHP_URL_PATH);
+	$refererPage = basename($refererPath ?: '');
+
+	$newsletterSources = [
+		'index.html' => 'newsletter_home',
+		'about.html' => 'newsletter_about',
+		'services.html' => 'newsletter_services',
+		'staffing.html' => 'newsletter_staffing',
+		'contact.html' => 'newsletter_contact',
+		'blog.html' => 'newsletter_blog',
+		'testimonials.html' => 'newsletter_testimonials'
+	];
+	$newsletterSource = $newsletterSources[$refererPage] ?? 'newsletter';
 
 	// Déterminer la source du formulaire
 	$source = 'unknown';
@@ -40,10 +58,18 @@ try {
 			// 1. ENREGISTRER EN BASE D'ABORD
 			try {
 				$db = Database::getInstance();
-				$db->insert('newsletter_subscriptions', [
+				$subscriptionId = $db->insert('newsletter_subscriptions', [
 					'email' => $senderEmail,
-					'source' => empty($source) ? 'newsletter' : $source,
+					'source' => $newsletterSource,
 					'ip_address' => $ipAddress
+				]);
+
+				$db->insert('activity_logs', [
+					'table_name' => 'newsletter_subscriptions',
+					'record_id' => $subscriptionId,
+					'action' => 'insert',
+					'ip_address' => $ipAddress,
+					'user_agent' => $userAgent
 				]);
 			} catch (Exception $dbError) {
 				// Si l'email existe déjà (UNIQUE constraint), ignorer l'erreur
@@ -64,10 +90,12 @@ try {
 
 				// Send to admin
 				$mail->clearAddresses(); // Clear previous addresses
+				$mail->clearReplyTos();
 				$template = file_get_contents('template/admin-newsletter.html');
 				$template = str_replace('{{email}}', $senderEmail, $template);
 
-				$mail->addAddress(Env::get('ADMIN_EMAIL')); // Add admin email
+				$mail->addAddress($adminEmail);
+				$mail->addReplyTo($senderEmail);
 				$mail->Subject = 'New Subscriber Added';
 				$mail->Body = $template;
 				$mail->AltBody = 'New Newsletter Subscription';
@@ -137,6 +165,7 @@ try {
 
 				// Send to admin
 				$mail->clearAddresses(); // Clear previous addresses
+				$mail->clearReplyTos();
 				$template = file_get_contents('template/admin-template.html');
 				$template = str_replace('{{name}}', $name, $template);
 				$template = str_replace('{{message}}', $message, $template);
@@ -152,7 +181,8 @@ try {
 					$template = str_replace('class="subject-hide"', 'class=""', $template);
 				}
 
-				$mail->addAddress(Env::get('ADMIN_EMAIL')); // Add admin email
+				$mail->addAddress($adminEmail);
+				$mail->addReplyTo($senderEmail, $name);
 				$mail->Subject = 'New Contact Form Submission';
 				$mail->Body = $template;
 				$mail->AltBody = 'A new contact form submission has been received.';

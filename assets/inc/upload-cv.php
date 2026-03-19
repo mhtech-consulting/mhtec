@@ -23,6 +23,11 @@ try {
     $phone = isset($_POST['phone']) ? trim(preg_replace("/[^\+\.\-\(\) 0-9]/", "", $_POST['phone'])) : "";
     $position = isset($_POST['position']) ? trim(preg_replace("/[^\.\-\' a-zA-Z0-9]/", "", $_POST['position'])) : "";
     $message = isset($_POST['message']) ? trim(preg_replace("/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'])) : "";
+    $adminEmail = trim((string) Env::get('ADMIN_EMAIL', 'contact@mhtechconsulting.com'));
+
+    if ($adminEmail === '' || stripos($adminEmail, 'scriptfusions') !== false) {
+        $adminEmail = 'contact@mhtechconsulting.com';
+    }
 
     // Validation des champs obligatoires
     if (empty($name) || empty($email) || empty($phone) || empty($position)) {
@@ -178,7 +183,9 @@ try {
 
     // Envoyer un email à l'administrateur avec le CV en pièce jointe
     $mail->clearAddresses();
-    $mail->addAddress(Env::get('ADMIN_EMAIL'));
+    $mail->clearReplyTos();
+    $mail->addAddress($adminEmail);
+    $mail->addReplyTo($email, $name);
     $mail->addAttachment($filePath, $file['name']);
     $mail->Subject = 'Nouveau CV reçu - ' . $position;
     $mail->Body = "
