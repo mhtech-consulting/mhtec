@@ -24,6 +24,11 @@ try {
     $profile = isset($_POST['profile']) ? trim(preg_replace("/[^\.\-\,\' a-zA-Z0-9]/", "", $_POST['profile'])) : "";
     $duration = isset($_POST['duration']) ? trim($_POST['duration']) : "";
     $message = isset($_POST['message']) ? trim(preg_replace("/(From:|To:|BCC:|CC:|Subject:|Content-Type:)/", "", $_POST['message'])) : "";
+    $adminEmail = trim((string) Env::get('ADMIN_EMAIL', 'contact@mhtechconsulting.com'));
+
+    if ($adminEmail === '' || stripos($adminEmail, 'scriptfusions') !== false) {
+        $adminEmail = 'contact@mhtechconsulting.com';
+    }
 
     // Validation des champs obligatoires
     if (empty($company) || empty($contactName) || empty($email) || empty($phone) || empty($profile) || empty($duration) || empty($message)) {
@@ -139,7 +144,9 @@ try {
 
     // Envoyer un email à l'administrateur
     $mail->clearAddresses();
-    $mail->addAddress(Env::get('ADMIN_EMAIL'));
+    $mail->clearReplyTos();
+    $mail->addAddress($adminEmail);
+    $mail->addReplyTo($email, $contactName);
     $mail->Subject = 'Nouvelle demande de recrutement - ' . $company;
     $mail->Body = "
     <html>

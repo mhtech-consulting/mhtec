@@ -770,14 +770,32 @@
         }
       },
       submitHandler: function (form) {
-        $.post(
-          $(form).attr("action"),
-          $(form).serialize(),
-          function (response) {
-            $(form).find(".result").html(response);
-            $(form).find('input[type="text"], input[type="email"], textarea').val("");
+        var $form = $(form);
+        var hasFileInput = $form.find('input[type="file"]').length > 0;
+        var isMultipart = ($form.attr("enctype") || "").toLowerCase() === "multipart/form-data";
+
+        var ajaxOptions = {
+          type: ($form.attr("method") || "POST").toUpperCase(),
+          url: $form.attr("action"),
+          success: function (response) {
+            $form.find(".result").html(response);
+            form.reset();
+            $form.find("select").val("");
+            if ($.fn.selectpicker) {
+              $form.find(".selectpicker").selectpicker("refresh");
+            }
           }
-        );
+        };
+
+        if (hasFileInput || isMultipart) {
+          ajaxOptions.data = new FormData(form);
+          ajaxOptions.processData = false;
+          ajaxOptions.contentType = false;
+        } else {
+          ajaxOptions.data = $form.serialize();
+        }
+
+        $.ajax(ajaxOptions);
         return false;
       }
     });
