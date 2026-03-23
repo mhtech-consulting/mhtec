@@ -36,6 +36,8 @@ $mail->isSMTP();
 
 // Enable HTML content in the email body
 $mail->isHTML(true);
+$mail->CharSet = 'UTF-8';
+$mail->Encoding = 'base64';
 
 // Set the sender's email and display name (must be in correct order)
 $mail->setFrom(Env::get('APP_EMAIL'), Env::get('APP_NAME'));
