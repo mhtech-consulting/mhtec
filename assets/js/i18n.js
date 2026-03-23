@@ -33,6 +33,17 @@ class I18n {
         window.history.replaceState({}, '', url.toString());
     }
 
+    getCurrentPage() {
+        const path = window.location.pathname.replace(/\/+$/, '');
+        const lastSegment = path.split('/').pop() || 'index';
+
+        if (lastSegment === '' || lastSegment === 'index') {
+            return 'index.html';
+        }
+
+        return lastSegment.endsWith('.html') ? lastSegment : `${lastSegment}.html`;
+    }
+
     async init() {
         await this.loadTranslations(this.currentLang);
         this.updatePageLanguage();
@@ -178,7 +189,7 @@ class I18n {
     }
 
     updatePageTitle() {
-        const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+        const currentPage = this.getCurrentPage();
         const pageKeyMap = {
             'index.html': 'meta',
             'about.html': 'about_page',

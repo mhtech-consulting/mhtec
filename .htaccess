@@ -2,5 +2,18 @@ Options -Indexes
 ErrorDocument 404 /404.html
 
 <IfModule mod_alias.c>
-    RedirectMatch 410 ^/(blog-left-sidebar|blog-right-sidebar|blog-standard|cart|checkout|faq|index-dark|index-one-page|index2-one-page|index2|index3-one-page|index3|login|pricing|product-details|products|project-details|sign-up|team-details|team|test-i18n|test-db-connection|wishlist)\.(html|php)$
+    RedirectMatch 410 ^/(blog-left-sidebar|blog-right-sidebar|blog-standard|cart|checkout|faq|index-dark|index-one-page|index2-one-page|index2|index3-one-page|index3|login|pricing|product-details|products|project-details|sign-up|team-details|team|test-i18n|test-db-connection|wishlist)(\.(html|php))?$
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule ^index(\.html)?$ / [R=301,L]
+    RewriteCond %{THE_REQUEST} \s/+([^.?\s]+)\.html([?\s]|$) [NC]
+    RewriteRule ^ %1 [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+    RewriteRule ^([^.]+)/?$ $1.html [L]
 </IfModule>

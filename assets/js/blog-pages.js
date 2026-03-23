@@ -25,7 +25,14 @@
     }
 
     function getCurrentPage() {
-        return window.location.pathname.split('/').pop() || 'index.html';
+        const path = window.location.pathname.replace(/\/+$/, '');
+        const lastSegment = path.split('/').pop() || 'index';
+
+        if (lastSegment === '' || lastSegment === 'index') {
+            return 'index.html';
+        }
+
+        return lastSegment.endsWith('.html') ? lastSegment : lastSegment + '.html';
     }
 
     function getPostBySlug(slug) {
@@ -45,7 +52,7 @@
             params.set('lang', 'fr');
         }
 
-        return 'blog-details.html?' + params.toString();
+        return 'blog-details?' + params.toString();
     }
 
     function wireBlogListingLinks() {

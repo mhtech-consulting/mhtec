@@ -193,7 +193,14 @@
     };
 
     function getCurrentPage() {
-        return window.location.pathname.split("/").pop() || "index.html";
+        const path = window.location.pathname.replace(/\/+$/, "");
+        const lastSegment = path.split("/").pop() || "index";
+
+        if (lastSegment === "" || lastSegment === "index") {
+            return "index.html";
+        }
+
+        return lastSegment.endsWith(".html") ? lastSegment : lastSegment + ".html";
     }
 
     function getCurrentLang() {
@@ -226,7 +233,7 @@
     function buildPageUrl(page, lang, extraParams) {
         const url = page === "index.html"
             ? new URL("/", SITE.origin + "/")
-            : new URL(page, SITE.origin + "/");
+            : new URL(page.replace(/\.html$/i, ""), SITE.origin + "/");
         const params = new URLSearchParams(extraParams || {});
 
         if (lang === "fr") {
@@ -540,7 +547,16 @@
                 url.searchParams.delete("lang");
             }
 
-            const relativeHref = url.pathname.split("/").pop() + (url.search ? url.search : "") + (url.hash ? url.hash : "");
+            let relativePath = url.pathname;
+
+            if (relativePath !== "/") {
+                relativePath = relativePath.replace(/\.html$/i, "");
+            }
+
+            const relativeHref = relativePath === "/"
+                ? "/" + (url.search ? url.search : "") + (url.hash ? url.hash : "")
+                : relativePath.split("/").pop() + (url.search ? url.search : "") + (url.hash ? url.hash : "");
+
             link.setAttribute("href", relativeHref);
         });
     }
