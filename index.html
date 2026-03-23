@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -92,7 +92,7 @@
                         <input type="text" name="name" placeholder="Votre nom" data-i18n="chat.name_placeholder" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="contact@mhtechnology.com" data-i18n="chat.email_placeholder" required>
+                        <input type="email" name="email" placeholder="contact@mhtechconsulting.com" data-i18n="chat.email_placeholder" required>
                     </div>
                     <div class="form-group">
                         <textarea name="message" placeholder="Votre message" data-i18n="chat.message_placeholder" required></textarea>
@@ -215,7 +215,7 @@
                                 <i class="icon-pin"></i>
                             </div>
                             <div class="text">
-                                <p>Votre localisation</p>
+                                <p><span data-i18n="footer.location">Votre localisation</span></p>
                             </div>
                         </li>
                     </ul>
@@ -251,12 +251,12 @@
                                 <li class="dropdown">
                                     <a href="services.html" data-i18n="nav.services">Services IT</a>
                                     <ul class="sub-menu">
-                                        <li><a href="software-development.html" data-i18n="nav.software_dev">Developpement Logiciel</a></li>
-                                        <li><a href="web-development.html" data-i18n="nav.web_dev">Developpement Web</a></li>
-                                        <li><a href="ui-ux-design.html" data-i18n="nav.ui_ux">Design UI/UX</a></li>
-                                        <li><a href="digital-marketing.html" data-i18n="nav.digital_marketing">Marketing Digital</a></li>
-                                        <li><a href="business-analysis.html" data-i18n="nav.business_analysis">Analyse Metier</a></li>
-                                        <li><a href="product-design.html" data-i18n="nav.product_design">Conception Produit</a></li>
+                                        <li><a href="software-development.html" data-i18n="nav.software_dev">Cybersecurite</a></li>
+                                        <li><a href="web-development.html" data-i18n="nav.web_dev">DevOps & Cloud</a></li>
+                                        <li><a href="ui-ux-design.html" data-i18n="nav.ui_ux">Design & Experience digitale</a></li>
+                                        <li><a href="digital-marketing.html" data-i18n="nav.digital_marketing">Operations IT & Help Desk</a></li>
+                                        <li><a href="business-analysis.html" data-i18n="nav.business_analysis">Conseil IT strategique</a></li>
+                                        <li><a href="product-design.html" data-i18n="nav.product_design">Analyse & pilotage projet</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -275,8 +275,8 @@
                         </div>
                         <div class="main-menu__right">
                             <div class="language-switcher">
-                                <button class="lang-btn active" data-lang="fr">FR</button>
-                                <button class="lang-btn" data-lang="en">EN</button>
+                                <button class="lang-btn" data-lang="fr">FR</button>
+                                <button class="lang-btn active" data-lang="en">EN</button>
                             </div>
                             <div class="main-menu__nav-sidebar-icon">
                                 <a class="navSidebar-button" href="#">
@@ -384,9 +384,7 @@
                                 <div class="section-title__tagline-box">
                                     <span class="section-title__tagline" data-i18n="about.tagline">Qui sommes-nous</span>
                                 </div>
-                                <h2 class="section-title__title title-animation" data-i18n="about.title">Des solutions technologiques modernes
-                                    <br><span>pour accompagner votre croissance</span>
-                                </h2>
+                                <h2 class="section-title__title title-animation" data-i18n-html="about.title_html">Des solutions technologiques modernes <br><span>pour accompagner votre croissance</span></h2>
                             </div>
                             <p class="about-one__text" data-i18n="about.description">MH Tech Consulting accompagne les entreprises dans leurs projets technologiques en proposant des services de conseil IT, cybersecurite, DevOps, design digital et operations IT. Nous mettons egalement a disposition des talents IT qualifies pour repondre aux besoins de recrutement des organisations.</p>
                             <ul class="about-one__points list-unstyled">
@@ -509,9 +507,7 @@
                     <div class="section-title__tagline-box">
                         <span class="section-title__tagline" data-i18n="services.tagline">Nos domaines d'expertise</span>
                     </div>
-                    <h2 class="section-title__title title-animation" data-i18n="services.title">4 domaines d'expertise
-                        <br> <span>pour reussir vos projets IT</span>
-                    </h2>
+                    <h2 class="section-title__title title-animation" data-i18n-html="services.title_html">4 domaines d'expertise <br><span>pour reussir vos projets IT</span></h2>
                 </div>
                 <div class="service-one__carousel owl-theme owl-carousel">
                     <!--Services One Single Start-->
@@ -607,9 +603,9 @@
                                     <div class="service-one__icon">
                                         <span class="icon-implement"></span>
                                     </div>
-                                    <h3 class="service-one__title"><a href="software-development.html">Solutions
+                                    <h3 class="service-one__title"><a href="software-development.html" data-i18n="services_home.service5_title">Solutions
                                             Technologiques</a></h3>
-                                    <p class="service-one__text">Conseil IT, solutions cloud, automatisation des
+                                    <p class="service-one__text" data-i18n="services_home.service5_desc">Conseil IT, solutions cloud, automatisation des
                                         processus et plateformes technologiques modernes.</p>
                                 </div>
                             </div>
@@ -630,10 +626,10 @@
                                     <div class="service-one__icon">
                                         <span class="icon-monitor"></span>
                                     </div>
-                                    <h3 class="service-one__title"><a href="business-analysis.html">Consulting
+                                    <h3 class="service-one__title"><a href="business-analysis.html" data-i18n="services_home.service6_title">Consulting
                                             Strategique</a>
                                     </h3>
-                                    <p class="service-one__text">Analyse des besoins, cadrage des projets et
+                                    <p class="service-one__text" data-i18n="services_home.service6_desc">Analyse des besoins, cadrage des projets et
                                         accompagnement a la prise de decision technologique.</p>
                                 </div>
                             </div>
@@ -662,9 +658,7 @@
                                 <div class="section-title__tagline-box">
                                     <span class="section-title__tagline" data-i18n="why_choose.tagline">POURQUOI MH TECH CONSULTING</span>
                                 </div>
-                                <h2 class="section-title__title title-animation" data-i18n="why_choose.title">4 raisons de nous choisir
-                                    <span>pour vos projets IT</span>
-                                </h2>
+                                <h2 class="section-title__title title-animation" data-i18n-html="why_choose.title_html">4 raisons de nous choisir <span>pour vos projets IT</span></h2>
                             </div>
                             <p class="why-choose-one__text" data-i18n="why_choose.description">Grace a notre expertise technique et notre approche personnalisee, nous accompagnons les entreprises dans leur reussite technologique avec des solutions adaptees et des talents qualifies.</p>
                             <div class="why-choose-one__progress-box">
@@ -770,8 +764,7 @@
                     <div class="section-title__tagline-box">
                         <span class="section-title__tagline" data-i18n="process.tagline">Processus de travail</span>
                     </div>
-                    <h2 class="section-title__title title-animation" data-i18n="process.title">Comment nous <span>travaillons</span>
-                    </h2>
+                    <h2 class="section-title__title title-animation" data-i18n-html="process.title_html">Comment nous <span>travaillons</span></h2>
                 </div>
                 <div class="row">
                     <!--Process One Single Start-->
@@ -844,15 +837,15 @@
             <div class="sliding-text-one__wrap">
                 <ul class="sliding-text-one__list list-unstyled marquee_mode-1">
                     <li>
-                        <h2 data-hover="Design UI/UX" class="sliding-text-one__title" data-i18n="sliding.item1">Design UI/UX</h2>
+                        <h2 data-hover="Design & Experience digitale" class="sliding-text-one__title" data-i18n="sliding.item1">Design & Experience digitale</h2>
                         <span class="icon-star"></span>
                     </li>
                     <li>
-                        <h2 data-hover="Conception Produit" class="sliding-text-one__title" data-i18n="sliding.item2">Conception Produit</h2>
+                        <h2 data-hover="Analyse & pilotage projet" class="sliding-text-one__title" data-i18n="sliding.item2">Analyse & pilotage projet</h2>
                         <span class="icon-star"></span>
                     </li>
                     <li>
-                        <h2 data-hover="Developpement Web" class="sliding-text-one__title" data-i18n="sliding.item3">Developpement Web</h2>
+                        <h2 data-hover="DevOps & Cloud" class="sliding-text-one__title" data-i18n="sliding.item3">DevOps & Cloud</h2>
                         <span class="icon-star"></span>
                     </li>
                     <li>
@@ -868,11 +861,11 @@
                         <span class="icon-star"></span>
                     </li>
                     <li>
-                        <h2 data-hover="Marketing Digital" class="sliding-text-one__title" data-i18n="sliding.item7">Marketing Digital</h2>
+                        <h2 data-hover="Operations IT & Help Desk" class="sliding-text-one__title" data-i18n="sliding.item7">Operations IT & Help Desk</h2>
                         <span class="icon-star"></span>
                     </li>
                     <li>
-                        <h2 data-hover="Website design" class="sliding-text-one__title" data-i18n="sliding.item8">Website design</h2>
+                        <h2 data-hover="Conseil IT strategique" class="sliding-text-one__title" data-i18n="sliding.item8">Conseil IT strategique</h2>
                         <span class="icon-star"></span>
                     </li>
                 </ul>
@@ -887,9 +880,7 @@
                     <div class="section-title__tagline-box">
                         <span class="section-title__tagline" data-i18n="portfolio.tagline">Portfolio</span>
                     </div>
-                    <h2 class="section-title__title title-animation" data-i18n="portfolio.title">Decouvrez nos derniers
-                        <span>Projets</span>
-                    </h2>
+                    <h2 class="section-title__title title-animation" data-i18n-html="portfolio.title_html">Decouvrez nos derniers <span>Projets</span></h2>
                 </div>
                 <div class="project-one__carousel-container">
                     <div class="project-one__carousel owl-carousel owl-theme">
@@ -1309,9 +1300,7 @@
                                 <div class="section-title__tagline-box">
                                     <span class="section-title__tagline" data-i18n="contact.tagline">Contact</span>
                                 </div>
-                                <h2 class="section-title__title title-animation" data-i18n="contact.title">Let's Talk A propos Business
-                                    <span>Solutions</span> technologique
-                                </h2>
+                                <h2 class="section-title__title title-animation" data-i18n-html="contact.title_html">Parlons de vos <span>solutions technologiques</span></h2>
                             </div>
                             <div class="contact-one__img-and-content">
                                 <div class="contact-one__img">
@@ -1356,7 +1345,7 @@
                                             <div class="contact-one__input-icon">
                                                 <span class="icon-mail"></span>
                                             </div>
-                                            <input type="email" name="email" placeholder="contact@mhtechnology.com" data-i18n="contact.email_placeholder"
+                                            <input type="email" name="email" placeholder="contact@mhtechconsulting.com" data-i18n="contact.email_placeholder"
                                                 required="">
                                         </div>
                                     </div>
@@ -1424,7 +1413,7 @@
                                 <div class="section-title__tagline-box">
                                     <span class="section-title__tagline" data-i18n="faq.tagline">Questions frequentes</span>
                                 </div>
-                                <h2 class="section-title__title title-animation" data-i18n="faq.title">Vous avez des questions en <span>tete ?</span> Obtenez les reponses maintenant
+                                <h2 class="section-title__title title-animation" data-i18n-html="faq.title_html">Vous avez des questions en <span>tete ?</span> Obtenez les reponses maintenant
                                 </h2>
                             </div>
                             <div class="accrodion-grp" data-grp-name="faq-one-accrodion">
@@ -1493,7 +1482,7 @@
                                     <div class="faq-one__experience-year">
                                         <h2 class="odometer" data-count="5">00</h2>
                                     </div>
-                                    <p class="faq-one__experience-text">Annees <br> d'experience</p>
+                                    <p class="faq-one__experience-text" data-i18n="faq.experience_text">Annees <br> d'experience</p>
                                 </div>
                                 <div class="faq-one__img">
                                     <img src="assets/images/resources/consulting.jpg" alt="Session de travail et conseil">
@@ -1521,9 +1510,7 @@
                     <div class="section-title__tagline-box">
                         <span class="section-title__tagline" data-i18n="blog.tagline">Notre blog</span>
                     </div>
-                    <h2 class="section-title__title title-animation" data-i18n="blog.title">Actualites et articles
-                        <br> de notre <span>blog</span>
-                    </h2>
+                    <h2 class="section-title__title title-animation" data-i18n-html="blog.title_html">Actualites et articles <br>de notre <span>blog</span></h2>
                 </div>
                 <div class="row">
                     <!--Blog One Single Start-->
@@ -1532,8 +1519,8 @@
                             <div class="blog-one__img">
                                 <img src="assets/images/resources/growth-2026-01-05-00-44-08-utc.jpg" alt="Croissance digitale accompagnee par la technologie">
                                 <div class="blog-one__tags">
-                                    <span>Digital</span>
-                                    <span>technologie</span>
+                                    <span data-i18n="blog_home.tag_digital">Digital</span>
+                                    <span data-i18n="blog_home.tag_technology">technologie</span>
                                 </div>
                             </div>
                             <div class="blog-one__content">
@@ -1541,16 +1528,16 @@
                                     <div class="blog-one__user-img">
                                         <img src="assets/images/blog/blog-one-user-1.jpg" alt="">
                                     </div>
-                                    <p class="blog-one__user-title">Malaika alise</p>
+                                    <p class="blog-one__user-title" data-i18n="blog_home.post1_author">Malaika alise</p>
                                 </div>
                                 <ul class="blog-one__meta list-unstyled">
                                     <li>
-                                        <a href="blog-details.html"><span class="far fa-calendar-alt"></span>Avril 5,
-                                            2025</a>
+                                        <a href="blog-details.html"><span class="far fa-calendar-alt"></span><span data-i18n="blog_home.post1_date">Avril 5,
+                                            2025</span></a>
                                     </li>
                                     <li>
-                                        <a href="blog-details.html"><span class="fal fa-comments"></span>80
-                                            commentaires</a>
+                                        <a href="blog-details.html"><span class="fal fa-comments"></span><span data-i18n="blog_home.post1_comments">80
+                                            commentaires</span></a>
                                     </li>
                                 </ul>
                                 <h3 class="blog-one__title"><a href="blog-details.html" data-i18n="blog.post1_title">Accelerer la croissance avec
@@ -1572,8 +1559,8 @@
                             <div class="blog-one__img-two">
                                 <img src="assets/images/resources/consulting.jpg" alt="Pilotage regional et gestion operationnelle">
                                 <div class="blog-one__tags-two">
-                                    <span>Digital</span>
-                                    <span>technologie</span>
+                                    <span data-i18n="blog_home.tag_digital">Digital</span>
+                                    <span data-i18n="blog_home.tag_technology">technologie</span>
                                 </div>
                             </div>
                             <div class="blog-one__content-two">
@@ -1581,16 +1568,16 @@
                                     <div class="blog-one__user-two-img">
                                         <img src="assets/images/blog/blog-one-user-2.jpg" alt="">
                                     </div>
-                                    <p class="blog-one__user-two-title">John Smith</p>
+                                    <p class="blog-one__user-two-title" data-i18n="blog_home.post2_author">John Smith</p>
                                 </div>
                                 <ul class="blog-one__meta-two list-unstyled">
                                     <li>
-                                        <a href="blog-details.html"><span class="far fa-calendar-alt"></span>Fev 25,
-                                            2025</a>
+                                        <a href="blog-details.html"><span class="far fa-calendar-alt"></span><span data-i18n="blog_home.post2_date">Fev 25,
+                                            2025</span></a>
                                     </li>
                                     <li>
-                                        <a href="blog-details.html"><span class="fal fa-comments"></span>22
-                                            commentaires</a>
+                                        <a href="blog-details.html"><span class="fal fa-comments"></span><span data-i18n="blog_home.post2_comments">22
+                                            commentaires</span></a>
                                     </li>
                                 </ul>
                                 <h3 class="blog-one__title-two"><a href="blog-details.html" data-i18n="blog.post2_title">Pilotage regional et
@@ -1610,8 +1597,8 @@
                             <div class="blog-one__img-two">
                                 <img src="assets/images/resources/server.jpg" alt="Serveurs et plateformes performants">
                                 <div class="blog-one__tags-two">
-                                    <span>Digital</span>
-                                    <span>technologie</span>
+                                    <span data-i18n="blog_home.tag_digital">Digital</span>
+                                    <span data-i18n="blog_home.tag_technology">technologie</span>
                                 </div>
                             </div>
                             <div class="blog-one__content-two">
@@ -1619,16 +1606,16 @@
                                     <div class="blog-one__user-two-img">
                                         <img src="assets/images/blog/blog-one-user-3.jpg" alt="">
                                     </div>
-                                    <p class="blog-one__user-two-title">Jerin jara</p>
+                                    <p class="blog-one__user-two-title" data-i18n="blog_home.post3_author">Jerin jara</p>
                                 </div>
                                 <ul class="blog-one__meta-two list-unstyled">
                                     <li>
-                                        <a href="blog-details.html"><span class="far fa-calendar-alt"></span>Mai 19,
-                                            2025</a>
+                                        <a href="blog-details.html"><span class="far fa-calendar-alt"></span><span data-i18n="blog_home.post3_date">Mai 19,
+                                            2025</span></a>
                                     </li>
                                     <li>
-                                        <a href="blog-details.html"><span class="fal fa-comments"></span>15
-                                            commentaires</a>
+                                        <a href="blog-details.html"><span class="fal fa-comments"></span><span data-i18n="blog_home.post3_comments">15
+                                            commentaires</span></a>
                                     </li>
                                 </ul>
                                 <h3 class="blog-one__title-two"><a href="blog-details.html" data-i18n="blog.post3_title">Serveurs et plateformes
@@ -1655,20 +1642,17 @@
                 <div class="newsletter-one__inner">
                     <div class="newsletter-one__left">
                         <h2 class="newsletter-one__title" data-i18n="newsletter.title">Recevez nos actualites technologiques</h2>
-                        <p class="newsletter-one__text" data-i18n="newsletter.description">Suivez nos reflexions sur la transformation digitale, la
-                            Cybersecurite et les solutions IT pour entreprises.</p>
+                        <p class="newsletter-one__text" data-i18n="newsletter.description">Suivez nos reflexions sur la transformation digitale, la cybersecurite et les solutions IT pour entreprises.</p>
                     </div>
                     <div class="newsletter-one__right">
                         <form class="newsletter-one__form contact-form-validated" action="assets/inc/sendemail.php" method="post">
                             <div class="newsletter-one__input">
                                 <input type="email" name="email" placeholder="Entrez votre email" data-i18n-placeholder="newsletter.email_placeholder" required>
                             </div>
-                            <button type="submit" class="thm-btn" data-i18n="newsletter.subscribe_button">S'abonner <span class="fas fa-arrow-right"></span>
-                            </button>
+                            <button type="submit" class="thm-btn" data-i18n-html="newsletter.subscribe_button_html">S'abonner <span class="fas fa-arrow-right"></span></button>
                             <div class="checked-box">
                                 <input type="checkbox" name="skipper1" id="skipper" checked="">
-                                <label for="skipper"><span></span>by Subscribing. Your Accept Privacy
-                                    policy</label>
+                                <label for="skipper"><span class="newsletter-one__checkbox"></span><span class="newsletter-one__privacy-text" data-i18n="newsletter.privacy_label">En vous abonnant, vous acceptez notre politique de confidentialite</span></label>
                             </div>
                             <div class="result"></div>
                         </form>
@@ -1721,11 +1705,11 @@
                                 <div class="footer-widget__services">
                                     <h4 class="footer-widget__title" data-i18n="footer.services_title">Services</h4>
                                     <ul class="footer-widget__links-list list-unstyled">
-                                        <li><a href="web-development.html" data-i18n="footer.service1">Developpement Web</a></li>
-                                        <li><a href="business-analysis.html" data-i18n="footer.service2">Developpement metier</a></li>
-                                        <li><a href="software-development.html" data-i18n="footer.service3">Services cloud</a></li>
-                                        <li><a href="product-design.html" data-i18n="footer.service4">Product Management</a></li>
-                                        <li><a href="ui-ux-design.html" data-i18n="footer.service5">Design UI/UX</a></li>
+                                        <li><a href="software-development.html" data-i18n="footer.service1">Cybersecurite</a></li>
+                                        <li><a href="web-development.html" data-i18n="footer.service2">DevOps & Cloud</a></li>
+                                        <li><a href="ui-ux-design.html" data-i18n="footer.service3">Design & Experience digitale</a></li>
+                                        <li><a href="digital-marketing.html" data-i18n="footer.service4">Operations IT & Help Desk</a></li>
+                                        <li><a href="business-analysis.html" data-i18n="footer.service5">Conseil IT strategique</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1749,7 +1733,7 @@
                                             <div class="icon">
                                                 <span class="icon-email"></span>
                                             </div>
-                                            <p><a href="mailto:contact@mhtechnology.com">contact@mhtechnology.com</a></p>
+                                            <p><a href="mailto:contact@mhtechconsulting.com">contact@mhtechconsulting.com</a></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -1803,7 +1787,7 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:contact@mhtechnology.com">contact@mhtechnology.com</a>
+                    <a href="mailto:contact@mhtechconsulting.com">contact@mhtechconsulting.com</a>
                 </li>
                 <li>
                     <i class="fas fa-phone"></i>
@@ -1888,8 +1872,6 @@
 </body>
 
 </html>
-
-
 
 
 

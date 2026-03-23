@@ -1,16 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Temoignages | MHTECH Consulting</title>
+    <title>Blog Details | MHTECH Consulting</title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/favicon-mhtech.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-mhtech.svg" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-mhtech.svg" />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-    <meta name="description" content="MHTECH Consulting " />
+    <meta name="description" content="MHTECH Consulting - Articles et insights sur la technologie, cybersecurite et transformation digitale" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -65,6 +65,7 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/language-switcher.css" />
 </head>
 
 <body class="custom-cursor">
@@ -89,19 +90,19 @@
         <div class="popup-inner">
             <div class="close-chat"><i class="fa fa-times"></i></div>
             <div class="chat-form">
-                <p>Please fill out the form below and we will get back to you as soon as possible.</p>
+                <p data-i18n="chat.description">Remplissez le formulaire ci-dessous et nous vous repondrons dans les plus brefs delais.</p>
                 <form action="assets/inc/sendemail.php" method="POST" class="contact-form-validated">
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="name" data-i18n-placeholder="chat.name_placeholder" placeholder="Votre nom" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="email" data-i18n-placeholder="chat.email_placeholder" placeholder="contact@mhtechconsulting.com" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" placeholder="Your Text" required></textarea>
+                        <textarea name="message" data-i18n-placeholder="chat.message_placeholder" placeholder="Votre message" required></textarea>
                     </div>
                     <div class="form-group message-btn">
-                        <button type="submit" class="thm-btn"> Submit Now
+                        <button type="submit" class="thm-btn" data-i18n="chat.send_button"> Envoyer
                             <span class="fas fa-arrow-right"></span>
                         </button>
                     </div>
@@ -128,30 +129,29 @@
                                 <a href="index.html"><img src="assets/images/resources/logo-mhtech-footer.svg" alt="" /></a>
                             </div>
                             <div class="content-box">
-                                <h4>About Us</h4>
+                                <h4 data-i18n="sidebar.about_title">A propos de MHTECH</h4>
                                 <div class="inner-text">
-                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has
-                                        roots in a piece of classical Latin literature from 45 BC, making it over
-                                        2000 years old.
-                                    </p>
+                                     <p data-i18n="sidebar.about_text">MHTECH Consulting accompagne les entreprises dans leur transformation digitale
+                                         avec des solutions modernes, performantes et securisees.
+                                     </p>
                                 </div>
                             </div>
 
                             <div class="form-inner">
-                                <h4>Get a free quote</h4>
+                                <h4 data-i18n="sidebar.consultation_title">Demandez une consultation</h4>
                                 <form action="assets/inc/sendemail.php" method="POST" class="contact-form-validated">
                                     <div class="form-group">
-                                        <input type="text" name="name" placeholder="Name" required="">
+                                        <input type="text" name="name" data-i18n-placeholder="sidebar.name_placeholder" placeholder="Nom" required="">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" name="email" placeholder="Email" required="">
+                                        <input type="email" name="email" data-i18n-placeholder="sidebar.email_placeholder" placeholder="Email" required="">
                                     </div>
                                     <div class="form-group">
-                                        <textarea name="message" placeholder="Message..." required=""></textarea>
+                                        <textarea name="message" data-i18n-placeholder="sidebar.message_placeholder" placeholder="Message..." required=""></textarea>
                                     </div>
                                     <div class="form-group message-btn">
-                                        <button class="thm-btn" data-text="Submit Now +" type="submit"
-                                            data-loading-text="Please wait...">Submit Now
+                                        <button class="thm-btn" data-text="Envoyer +" type="submit"
+                                            data-loading-text="Veuillez patienter..." data-i18n="sidebar.send_button">Envoyer
                                             <span class="fas fa-arrow-right"></span>
                                         </button>
                                     </div>
@@ -160,18 +160,18 @@
                             </div>
 
                             <div class="sidebar-contact-info">
-                                <h4>Contact Info</h4>
+                                <h4 data-i18n="sidebar.contact_title">Coordonnees</h4>
                                 <ul class="list-unstyled">
                                     <li>
-                                        <span class="icon-pin"></span> 88 broklyn street, New York
+                                        <span class="icon-pin"></span> <span data-i18n="footer.location">Votre localisation</span>
                                     </li>
                                     <li>
                                         <span class="icon-call"></span>
-                                        <a href="tel:123456789">+1 555-9990-153</a>
+                                        <a href="tel:+12489381944">+1 (248) 938 1944</a>
                                     </li>
                                     <li>
                                         <span class="icon-email"></span>
-                                        <a href="mailto:info@example.com">info@example.com</a>
+                                        <a href="mailto:contact@mhtechconsulting.com">contact@mhtechconsulting.com</a>
                                     </li>
                                 </ul>
                             </div>
@@ -210,7 +210,7 @@
                                 <i class="icon-email"></i>
                             </div>
                             <div class="text">
-                                <p><a href="mailto:info@Itzone24.com">info@Itzone25.com</a>
+                                <p><a href="mailto:contact@mhtechconsulting.com">contact@mhtechconsulting.com</a>
                                 </p>
                             </div>
                         </li>
@@ -219,14 +219,13 @@
                                 <i class="icon-pin"></i>
                             </div>
                             <div class="text">
-                                <p>4124 Cimmaron Road, CA 92806</p>
+                                <p><span data-i18n="footer.location">Votre localisation</span></p>
                             </div>
                         </li>
                     </ul>
-                    <p class="main-menu__top-welcome-text">Welcome to Itzone
-                        our Best Technology HTML5 Template</p>
+                    <p class="main-menu__top-welcome-text" data-i18n="header.welcome_text">MHTECH Consulting accompagne votre transformation digitale</p>
                     <div class="main-menu__top-right">
-                        <p class="main-menu__social-title">Follow Us On:</p>
+                        <p class="main-menu__social-title" data-i18n="header.follow_us">Suivez-nous :</p>
                         <div class="main-menu__social">
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -247,193 +246,41 @@
                         <div class="main-menu__main-menu-box">
                             <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                             <ul class="main-menu__list">
-                                <li class="dropdown megamenu">
-                                    <a href="#">Home </a>
-                                    <ul>
-                                        <li>
-                                            <section class="home-showcase">
-                                                <div class="container">
-                                                    <div class="home-showcase__inner">
-                                                        <div class="row">
-                                                            <div class="col-lg-3">
-                                                                <div class="home-showcase__item">
-                                                                    <div class="home-showcase__image">
-                                                                        <img src="assets/images/home-showcase/home-showcase-1-1.jpg"
-                                                                            alt="">
-                                                                        <div class="home-showcase__buttons">
-                                                                            <a href="index.html"
-                                                                                class="thm-btn home-showcase__buttons__item">
-                                                                                Multi Page
-                                                                                <span class="fas fa-arrow-right"></span>
-                                                                            </a>
-                                                                            <a href="index-one-page.html"
-                                                                                class="thm-btn home-showcase__buttons__item">
-                                                                                One Page
-                                                                                <span class="fas fa-arrow-right"></span>
-                                                                            </a>
-                                                                        </div>
-                                                                        <!-- /.home-showcase__buttons -->
-                                                                    </div><!-- /.home-showcase__image -->
-                                                                    <h3 class="home-showcase__title">Home
-                                                                        Page
-                                                                        01</h3>
-                                                                    <!-- /.home-showcase__title -->
-                                                                </div><!-- /.home-showcase__item -->
-                                                            </div><!-- /.col-lg-3 -->
-                                                            <div class="col-lg-3">
-                                                                <div class="home-showcase__item">
-                                                                    <div class="home-showcase__image">
-                                                                        <img src="assets/images/home-showcase/home-showcase-1-2.jpg"
-                                                                            alt="">
-                                                                        <div class="home-showcase__buttons">
-                                                                            <a href="index2.html"
-                                                                                class="thm-btn home-showcase__buttons__item">
-                                                                                Multi Page
-                                                                                <span class="fas fa-arrow-right"></span>
-                                                                            </a>
-                                                                            <a href="index2-one-page.html"
-                                                                                class="thm-btn home-showcase__buttons__item">
-                                                                                One Page
-                                                                                <span class="fas fa-arrow-right"></span>
-                                                                            </a>
-                                                                        </div>
-                                                                        <!-- /.home-showcase__buttons -->
-                                                                    </div><!-- /.home-showcase__image -->
-                                                                    <h3 class="home-showcase__title">Home
-                                                                        Page
-                                                                        02
-                                                                    </h3><!-- /.home-showcase__title -->
-                                                                </div><!-- /.home-showcase__item -->
-                                                            </div><!-- /.col-lg-3 -->
-                                                            <div class="col-lg-3">
-                                                                <div class="home-showcase__item">
-                                                                    <div class="home-showcase__image">
-                                                                        <img src="assets/images/home-showcase/home-showcase-1-3.jpg"
-                                                                            alt="">
-                                                                        <div class="home-showcase__buttons">
-                                                                            <a href="index3.html"
-                                                                                class="thm-btn home-showcase__buttons__item">
-                                                                                Multi Page
-                                                                                <span class="fas fa-arrow-right"></span>
-                                                                            </a>
-                                                                            <a href="index3-one-page.html"
-                                                                                class="thm-btn home-showcase__buttons__item">
-                                                                                One Page
-                                                                                <span class="fas fa-arrow-right"></span>
-                                                                            </a>
-                                                                        </div>
-                                                                        <!-- /.home-showcase__buttons -->
-                                                                    </div><!-- /.home-showcase__image -->
-                                                                    <h3 class="home-showcase__title">Home
-                                                                        Page
-                                                                        03
-                                                                    </h3><!-- /.home-showcase__title -->
-                                                                </div><!-- /.home-showcase__item -->
-                                                            </div><!-- /.col-lg-3 -->
-                                                            <div class="col-lg-3">
-                                                                <div class="home-showcase__item">
-                                                                    <div class="home-showcase__image">
-                                                                        <img src="assets/images/home-showcase/home-showcase-1-4.jpg"
-                                                                            alt="">
-                                                                        <div class="home-showcase__buttons">
-                                                                            <a href="index-dark.html"
-                                                                                class="thm-btn home-showcase__buttons__item">Dark
-                                                                                Page
-                                                                                <span class="fas fa-arrow-right"></span>
-                                                                            </a>
-                                                                        </div>
-                                                                        <!-- /.home-showcase__buttons -->
-                                                                    </div><!-- /.home-showcase__image -->
-                                                                    <h3 class="home-showcase__title">Dark Page
-                                                                    </h3><!-- /.home-showcase__title -->
-                                                                </div><!-- /.home-showcase__item -->
-                                                            </div><!-- /.col-lg-3 -->
-                                                        </div><!-- /.row -->
-                                                    </div><!-- /.home-showcase__inner -->
-
-                                                </div><!-- /.container -->
-                                            </section>
-                                        </li>
+                                <li>
+                                    <a href="index.html" data-i18n="nav.home">Accueil</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" data-i18n="nav.about">A propos</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="services.html" data-i18n="nav.services">Services IT</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="software-development.html" data-i18n="nav.software_dev">Cybersecurite</a></li>
+                                        <li><a href="web-development.html" data-i18n="nav.web_dev">DevOps & Cloud</a></li>
+                                        <li><a href="ui-ux-design.html" data-i18n="nav.ui_ux">Design & Experience digitale</a></li>
+                                        <li><a href="digital-marketing.html" data-i18n="nav.digital_marketing">Operations IT & Help Desk</a></li>
+                                        <li><a href="business-analysis.html" data-i18n="nav.business_analysis">Conseil IT strategique</a></li>
+                                        <li><a href="product-design.html" data-i18n="nav.product_design">Analyse & pilotage projet</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="about.html">About</a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">Pages</a>
-                                    <ul class="shadow-box">
-                                        <li><a href="team.html">Team</a></li>
-                                        <li><a href="team-details.html">Team Details</a></li>
-                                        <li><a href="projects.html">Projects</a></li>
-                                        <li><a href="project-details.html">Project Details</a></li>
-                                        <li><a href="testimonials.html">Testimonials</a></li>
-                                        <li><a href="pricing.html">Pricing</a></li>
-                                        <li><a href="faq.html">FAQs</a></li>
-                                        <li><a href="404.html">404 Error</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">services</a>
-                                    <ul class="shadow-box">
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="ui-ux-design.html">UI/UX Design</a></li>
-                                        <li><a href="web-development.html">Web Development</a></li>
-                                        <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                                        <li><a href="business-analysis.html">Business Analysis</a></li>
-                                        <li><a href="software-development.html">Software Development</a></li>
-                                        <li><a href="product-design.html">Product Design</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">Shop</a>
-                                    <ul class="shadow-box">
-                                        <li><a href="products.html">Products</a></li>
-                                        <li><a href="product-details.html">Product Details</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="wishlist.html">Wishlist</a></li>
-                                        <li><a href="sign-up.html">Sign Up</a></li>
-                                        <li><a href="login.html">Login</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="#">Blog</a>
-                                    <ul class="shadow-box">
-                                        <li><a href="blog.html">Blog</a></li>
-                                        <li><a href="blog-standard.html">Blog Standard</a></li>
-                                        <li><a href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-                                        <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                    </ul>
+                                    <a href="staffing.html" data-i18n="nav.staffing">Staffing IT</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact</a>
+                                    <a href="testimonials.html" data-i18n="nav.testimonials">Temoignages</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html" data-i18n="nav.blog">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" data-i18n="nav.contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="main-menu__right">
-                            <div class="main-menu__call">
-                                <div class="main-menu__call-icon">
-                                    <i class="icon-call"></i>
-                                </div>
-                                <div class="main-menu__call-content">
-                                    <p class="main-menu__call-sub-title">Call Anytime</p>
-                                    <h5 class="main-menu__call-number"><a href="tel:9288006780">+92 ( 8800 ) -
-                                            6780</a></h5>
-                                </div>
-                            </div>
-                            <div class="main-menu__search-cart-box">
-                                <div class="main-menu__search-cart-box">
-                                    <div class="main-menu__search-box">
-                                        <a href="#" class="main-menu__search searcher-toggler-box fal fa-search"></a>
-                                    </div>
-                                    <div class="main-menu__cart-box">
-                                        <a href="cart.html" class="main-menu__cart">
-                                            <span class="fal fa-shopping-cart"></span>
-                                            <span class="main-menu__cart-count">02</span>
-                                        </a>
-                                    </div>
-                                </div>
+                            <div class="language-switcher">
+                                <button class="lang-btn" data-lang="fr">FR</button>
+                                <button class="lang-btn active" data-lang="en">EN</button>
                             </div>
                             <div class="main-menu__nav-sidebar-icon">
                                 <a class="navSidebar-button" href="#">
@@ -443,7 +290,7 @@
                                 </a>
                             </div>
                             <div class="main-menu__btn-box">
-                                <a href="about.html" class="thm-btn">Discover More
+                                <a href="about.html" class="thm-btn" data-i18n="common.learn_more">En savoir plus
                                     <span class="fas fa-arrow-right"></span>
                                 </a>
                             </div>
@@ -465,12 +312,14 @@
             </div>
             <div class="container">
                 <div class="page-header__inner">
-                    <h3>Blog Details</h3>
+                    <h3 data-i18n="blog_details.page_title">Details de l'article</h3>
                     <div class="thm-breadcrumb__inner">
                         <ul class="thm-breadcrumb list-unstyled">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html" data-i18n="blog_details.breadcrumb_home">Accueil</a></li>
                             <li><span class="icon-arrow-angle-pointing-to-right"></span></li>
-                            <li>Blog Details</li>
+                            <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+                            <li><span class="icon-arrow-angle-pointing-to-right"></span></li>
+                            <li data-i18n="blog_details.breadcrumb_current">Details</li>
                         </ul>
                     </div>
                 </div>
@@ -493,40 +342,27 @@
                             <div class="blog-details__content">
                                 <div class="blog-details__user-and-meta">
                                     <div class="blog-details__user">
-                                        <p><span class="fas fa-user"></span>By Admin</p>
+                                        <p><span class="fas fa-user"></span><span data-i18n="blog_details.by_admin">Par Admin</span></p>
                                     </div>
                                     <ul class="blog-details__meta list-unstyled">
                                         <li>
-                                            <a href="#"><span class="fas fa-comments"></span>Comments (05)</a>
+                                            <a href="#"><span class="fas fa-comments"></span><span data-i18n="blog_details.comments">Commentaires (05)</span></a>
                                         </li>
                                         <li>
-                                            <a href="#"><span class="fas fa-clock"></span>4 Min Read</a>
+                                            <a href="#"><span class="fas fa-clock"></span><span data-i18n="blog_details.read_time">4 Min de lecture</span></a>
                                         </li>
                                     </ul>
                                 </div>
-                                <h3 class="blog-details__title">Top IT Trends in 2025. What Businesses Need to Know
+                                <h3 class="blog-details__title" data-i18n="blog_details.article_title">Les tendances IT majeures en 2025 : ce que les entreprises doivent savoir
                                 </h3>
-                                <p class="blog-details__text-1">Out enigma ad minim veniam, quis nostrud exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute inure dolor in
-                                    the reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur.
-                                    Excepteur snit occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.</p>
-                                <p class="blog-details__text-2">The wise man therefore always holds in these matters to
-                                    this principle of selection. He rejects pleasures to secure other greater pleasures,
-                                    or else he endures pains to avoid worse pains to the selection point.</p>
+                                <p class="blog-details__text-1" data-i18n="blog_details.article_text1">La transformation digitale s'accelere et les entreprises doivent s'adapter pour rester competitives. L'intelligence artificielle, le cloud computing et la cybersecurite sont au coeur des strategies technologiques modernes. Comprendre ces tendances est essentiel pour prendre les bonnes decisions.</p>
+                                <p class="blog-details__text-2" data-i18n="blog_details.article_text2">Les dirigeants avertis choisissent toujours de prioriser les investissements technologiques qui offrent le meilleur retour sur investissement tout en minimisant les risques operationnels.</p>
                                 <div class="blog-details__author-box">
-                                    <h4 class="blog-details__author-text">“Globally cultivate ubiquitous growth
-                                        strategies before team building users. Dramatically transform effective internal
-                                        or "organic" sources for sound e-services. Authoritatively harness
-                                        performance based customer service via intermandated”</h4>
-                                    <p class="blog-details__author-name">Kane Williamson<span> / CEO</span></p>
+                                    <h4 class="blog-details__author-text" data-i18n="blog_details.quote">"Investir dans la technologie n'est plus une option, c'est une necessite strategique. Les entreprises qui embrassent l'innovation sont celles qui prosperent dans un marche en constante evolution."</h4>
+                                    <p class="blog-details__author-name">MHTECH Consulting</p>
                                 </div>
-                                <h3 class="blog-details__title-2">How to become a successful businessman</h3>
-                                <p class="blog-details__text-3">Out enigma ad minim veniam, quis nostrud exercitation
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute inure dolor in
-                                    the reprehenderit in voluptate velit esse cillum dolore eu fugiat null pariatur.
-                                    Excepteur snit occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum.</p>
+                                <h3 class="blog-details__title-2" data-i18n="blog_details.subtitle">Comment reussir sa transformation digitale</h3>
+                                <p class="blog-details__text-3" data-i18n="blog_details.article_text3">La cle d'une transformation digitale reussie repose sur une strategie claire, un accompagnement adapte et des outils performants. Il est essentiel de definir des objectifs mesurables, d'impliquer les equipes et de choisir les bons partenaires technologiques pour garantir le succes de chaque projet.</p>
                                 <div class="blog-details__img-box">
                                     <div class="row">
                                         <div class="col-xl-6">
@@ -543,21 +379,21 @@
                                 </div>
                                 <div class="blog-details__tag-and-share">
                                     <div class="blog-details__tag">
-                                        <h3 class="blog-details__tag-title">Tags :</h3>
+                                        <h3 class="blog-details__tag-title" data-i18n="blog_details.tags_label">Tags :</h3>
                                         <ul class="blog-details__tag-list list-unstyled">
                                             <li>
-                                                <a href="#">Analysis</a>
+                                                <a href="#" data-i18n="blog_details.tag1">Cybersecurite</a>
                                             </li>
                                             <li>
-                                                <a href="#">Planning</a>
+                                                <a href="#" data-i18n="blog_details.tag2">Cloud</a>
                                             </li>
                                             <li>
-                                                <a href="#">Management</a>
+                                                <a href="#" data-i18n="blog_details.tag3">Transformation</a>
                                             </li>
                                         </ul>
                                     </div>
                                     <div class="blog-details__share-box">
-                                        <h3 class="blog-details__share-title">Share :</h3>
+                                        <h3 class="blog-details__share-title" data-i18n="blog_details.share_label">Partager :</h3>
                                         <div class="blog-details__share">
                                             <a href="#"><span class="icon-facebook-app-symbol"></span></a>
                                             <a href="#"><span class="icon-twitter-1"></span></a>
@@ -566,57 +402,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="comment-one">
-                                    <div class="comment-one__single">
-                                        <div class="comment-one__image">
-                                            <img src="assets/images/blog/comment-1-1.jpg" alt="">
-                                        </div>
-                                        <div class="comment-one__content">
-                                            <h3>Theresa Webb</h3>
-                                            <span>02 June 2025 at 03:30 pm</span>
-                                            <p>The wise man therefore always holds in these matters to this principle of
-                                                selection. He rejects pleasures to secure other greater pleasures, or
-                                                else he endures pains to avoid worse pains to the selection point. But
-                                                in certain to all this circumstances</p>
-                                            <div class="comment-one__btn-box">
-                                                <a href="blog-details.html" class="thm-btn">Reply<span
-                                                        class="fas fa-arrow-right"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="comment-one__single">
-                                        <div class="comment-one__image">
-                                            <img src="assets/images/blog/comment-1-2.jpg" alt="">
-                                        </div>
-                                        <div class="comment-one__content">
-                                            <h3>Cameron Williamson</h3>
-                                            <span>02 June 2025 at 03:30 pm</span>
-                                            <p>The wise man therefore always holds in these matters to this principle of
-                                                selection. He rejects pleasures to secure other greater pleasures, or
-                                                else he endures pains to avoid worse pains to the selection point. But
-                                                in certain to all this circumstances</p>
-                                            <div class="comment-one__btn-box">
-                                                <a href="blog-details.html" class="thm-btn">Reply<span
-                                                        class="fas fa-arrow-right"></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <div class="comment-form">
-                                    <h3 class="comment-form__title">Leave A Reply</h3>
-                                    <p class="comment-form__text">By using form u agree with the message sorage, you can
-                                        contact us directly now</p>
+                                    <h3 class="comment-form__title" data-i18n="blog_details.leave_reply">Laisser un commentaire</h3>
+                                    <p class="comment-form__text" data-i18n="blog_details.form_notice">En utilisant ce formulaire, vous acceptez le stockage de votre message. Vous pouvez aussi nous contacter directement.</p>
                                     <form action="assets/inc/sendemail.php"
                                         class="comment-one__form contact-form-validated" method="post">
                                         <div class="row">
                                             <div class="col-xl-6">
                                                 <div class="comment-form__input-box">
-                                                    <input type="text" placeholder="Your Name" name="name">
+                                                    <input type="text" data-i18n-placeholder="blog_details.your_name" placeholder="Votre nom" name="name">
                                                 </div>
                                             </div>
                                             <div class="col-xl-6">
                                                 <div class="comment-form__input-box">
-                                                    <input type="email" placeholder="Your Email" name="email">
+                                                    <input type="email" data-i18n-placeholder="blog_details.your_email" placeholder="Votre email" name="email">
                                                 </div>
                                             </div>
                                         </div>
@@ -624,11 +423,11 @@
                                             <div class="col-xl-12">
                                                 <div class="comment-form__input-box text-message-box">
                                                     <textarea name="message"
-                                                        placeholder="Write your messege"></textarea>
+                                                        data-i18n-placeholder="blog_details.your_message" placeholder="Votre message"></textarea>
                                                 </div>
                                                 <div class="comment-form__btn-box">
-                                                    <button type="submit" class="thm-btn comment-form__btn">submit
-                                                        now <span class="fas fa-arrow-right"></span></button>
+                                                    <button type="submit" class="thm-btn comment-form__btn" data-i18n="blog_details.submit_btn">Envoyer
+                                                        <span class="fas fa-arrow-right"></span></button>
                                                 </div>
                                             </div>
                                         </div>
@@ -645,7 +444,7 @@
                             <!--Start Sidebar Single-->
                             <div class="sidebar__single sidebar__search wow fadeInUp" data-wow-delay=".1s">
                                 <form action="#" class="sidebar__search-form">
-                                    <input type="search" placeholder="Search...">
+                                    <input type="search" data-i18n-placeholder="blog_details.search_placeholder" placeholder="Rechercher...">
                                     <button type="submit"><i class="fa fa-search"></i></button>
                                 </form>
                             </div>
@@ -654,32 +453,29 @@
 
                             <!--Start Sidebar Single-->
                             <div class="sidebar__single sidebar__category wow fadeInUp" data-wow-delay=".1s">
-                                <h3 class="sidebar__title">Categories</h3>
+                                <h3 class="sidebar__title" data-i18n="blog_details.categories_title">Categories</h3>
                                 <ul class="sidebar__category-list list-unstyled">
-                                    <li><a href="#">IT Solution <span>(12)</span></a></li>
-                                    <li class="active"><a href="#">SEO Marketing
-                                            <span>(15)</span></a></li>
-                                    <li><a href="#">Web Development <span>(08)</span></a></li>
-                                    <li><a href="#">UI/UX Design <span>(20)</span></a></li>
-                                    <li><a href="#">Cloud Solution <span>(14)</span></a></li>
-                                    <li><a href="#">Products Design <span>(05)</span></a></li>
+                                    <li><a href="#" data-i18n="blog_details.cat_cybersecurity">Cybersecurite <span>(12)</span></a></li>
+                                    <li class="active"><a href="#" data-i18n="blog_details.cat_devops">DevOps & Cloud <span>(15)</span></a></li>
+                                    <li><a href="#" data-i18n="blog_details.cat_design">Design & Experience digitale <span>(08)</span></a></li>
+                                    <li><a href="#" data-i18n="blog_details.cat_operations">Operations IT <span>(20)</span></a></li>
+                                    <li><a href="#" data-i18n="blog_details.cat_consulting">Conseil IT strategique <span>(14)</span></a></li>
+                                    <li><a href="#" data-i18n="blog_details.cat_analysis">Analyse & pilotage projet <span>(05)</span></a></li>
                                 </ul>
                             </div>
                             <!--End Sidebar Single-->
 
                             <!--Start Sidebar Single-->
                             <div class="sidebar__single sidebar__post wow fadeInUp" data-wow-delay=".1s">
-                                <h3 class="sidebar__title">Recent Post</h3>
+                                <h3 class="sidebar__title" data-i18n="blog_details.recent_posts">Articles recents</h3>
                                 <ul class="sidebar__post-list list-unstyled">
                                     <li>
                                         <div class="sidebar__post-image">
                                             <img src="assets/images/blog/blog-lp-1.jpg" alt="">
                                         </div>
                                         <div class="sidebar__post-content">
-                                            <p class="sidebar__post-date"><span class="icon-calendar"></span>March 18,
-                                                2025</p>
-                                            <h3 class="sidebar__post-title"><a href="blog-details.html">Adapting to
-                                                    Digital Marketing Trends: Staying Ahead</a></h3>
+                                            <p class="sidebar__post-date"><span class="icon-calendar"></span><span data-i18n="blog_details.post1_date">Mars 18, 2025</span></p>
+                                            <h3 class="sidebar__post-title"><a href="blog-details.html" data-i18n="blog_details.post1_title">Moderniser son entreprise avec la technologie</a></h3>
                                         </div>
                                     </li>
                                     <li>
@@ -687,10 +483,8 @@
                                             <img src="assets/images/blog/blog-lp-2.jpg" alt="">
                                         </div>
                                         <div class="sidebar__post-content">
-                                            <p class="sidebar__post-date"><span class="icon-calendar"></span>April 18,
-                                                2025</p>
-                                            <h3 class="sidebar__post-title"><a href="blog-details.html">Standing Out in
-                                                    a Competitive Market: </a></h3>
+                                            <p class="sidebar__post-date"><span class="icon-calendar"></span><span data-i18n="blog_details.post2_date">Avril 18, 2025</span></p>
+                                            <h3 class="sidebar__post-title"><a href="blog-details.html" data-i18n="blog_details.post2_title">5 tendances technologiques majeures en 2025</a></h3>
                                         </div>
                                     </li>
                                     <li>
@@ -698,10 +492,8 @@
                                             <img src="assets/images/blog/blog-lp-3.jpg" alt="">
                                         </div>
                                         <div class="sidebar__post-content">
-                                            <p class="sidebar__post-date"><span class="icon-calendar"></span>Jun 18,
-                                                2025</p>
-                                            <h3 class="sidebar__post-title"><a href="blog-details.html">The Importance
-                                                    of Accurate Performance Reporting </a></h3>
+                                            <p class="sidebar__post-date"><span class="icon-calendar"></span><span data-i18n="blog_details.post3_date">Juin 18, 2025</span></p>
+                                            <h3 class="sidebar__post-title"><a href="blog-details.html" data-i18n="blog_details.post3_title">Cybersecurite : proteger vos actifs numeriques</a></h3>
                                         </div>
                                     </li>
                                 </ul>
@@ -710,16 +502,16 @@
 
                             <!--Start Sidebar Single-->
                             <div class="sidebar__single sidebar__tags wow fadeInUp" data-wow-delay=".1s">
-                                <h3 class="sidebar__title">Tags Cloud</h3>
+                                <h3 class="sidebar__title" data-i18n="blog_details.tags_cloud">Nuage de tags</h3>
                                 <ul class="sidebar__tags-list clearfix list-unstyled">
-                                    <li><a href="#">Development</a></li>
-                                    <li><a href="#">Start Up</a></li>
-                                    <li><a href="#">Agency</a></li>
+                                    <li><a href="#">Cybersecurite</a></li>
+                                    <li><a href="#">DevOps</a></li>
+                                    <li><a href="#">Cloud</a></li>
                                     <li><a href="#">Innovation</a></li>
-                                    <li><a href="#">Analytics</a></li>
-                                    <li><a href="#">Business</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">Consulting</a></li>
+                                    <li><a href="#">Staffing</a></li>
+                                    <li><a href="#">Services IT</a></li>
+                                    <li><a href="#">Transformation</a></li>
                                 </ul>
                             </div>
                             <!--End Sidebar Single-->
@@ -730,7 +522,7 @@
                 </div>
             </div>
         </section>
-        <!--Blog Details Start-->
+        <!--Blog Details End-->
 
         <!-- Newsletter One Start -->
         <section class="newsletter-two">
@@ -742,17 +534,16 @@
                         <img src="assets/images/resources/newsletter-two-img-1.png" alt="">
                     </div>
                     <div class="newsletter-two__left">
-                        <h2 class="newsletter-two__title">Subcribe to Our Newsletter</h2>
-                        <p class="newsletter-two__text">Get the latest SEO tips and software insights straight to your
-                            inbox.</p>
+                        <h2 class="newsletter-two__title" data-i18n="about_page.newsletter_title">Abonnez-vous a notre newsletter</h2>
+                        <p class="newsletter-two__text" data-i18n="about_page.newsletter_text">Recevez les dernieres actualites et conseils technologiques directement dans votre boite mail.</p>
                     </div>
                     <div class="newsletter-two__right">
                         <form class="contact-form-validated newsletter-two__form" action="assets/inc/sendemail.php"
                             method="post">
                             <div class="newsletter-two__input">
-                                <input type="email" placeholder="Enter email address" name="email" required>
+                                <input type="email" data-i18n-placeholder="about_page.newsletter_placeholder" placeholder="Entrez votre adresse email" name="email" required>
                             </div>
-                            <button type="submit" class="thm-btn">Subscribe Now <span class="fas fa-arrow-right"></span>
+                            <button type="submit" class="thm-btn" data-i18n="about_page.newsletter_button">S'abonner <span class="fas fa-arrow-right"></span>
                             </button>
                             <div class="result"></div>
                         </form>
@@ -777,9 +568,9 @@
                                     <div class="footer-widget__about-logo">
                                         <a href="index.html"><img src="assets/images/resources/logo-mhtech-footer.svg" alt=""></a>
                                     </div>
-                                    <p class="footer-widget__about-text">Car Is Where Early Adopters And Innovation
-                                        Seekers FindGet the latest SEO tips and software Lively
-                                        Imaginative Tech.</p>
+                                    <p class="footer-widget__about-text" data-i18n="about_page.footer_about">MHTECH Consulting accompagne les entreprises
+                                        dans la conception, le developpement et la securisation de leurs solutions
+                                        numeriques.</p>
                                     <div class="footer-widget__social">
                                         <a href="#"><i class="fab fa-twitter"></i></a>
                                         <a href="#"><i class="fab fa-facebook"></i></a>
@@ -790,29 +581,28 @@
                             </div>
                             <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                                 <div class="footer-widget__links">
-                                    <h4 class="footer-widget__title">Quick links</h4>
+                                    <h4 class="footer-widget__title" data-i18n="about_page.footer_quick_links">Liens rapides</h4>
                                     <ul class="footer-widget__links-list list-unstyled">
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="team.html">Meet Our Team</a></li>
-                                        <li><a href="projects.html">Our Projects</a></li>
-                                        <li><a href="faq.html">Help & FAQs</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="index.html" data-i18n="about_page.footer_link_home">Accueil</a></li>
+                                        <li><a href="about.html" data-i18n="about_page.footer_link_about">A propos</a></li>
+                                        <li><a href="projects.html" data-i18n="about_page.footer_link_projects">Projets</a></li>
+                                        <li><a href="services.html" data-i18n="about_page.footer_link_services">Services</a></li>
+                                        <li><a href="contact.html" data-i18n="about_page.footer_link_contact">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                                 <div class="footer-widget__post-box">
-                                    <h4 class="footer-widget__title">Recent Posts</h4>
+                                    <h4 class="footer-widget__title" data-i18n="about_page.footer_recent_posts">Articles recents</h4>
                                     <ul class="footer-widget__post list-unstyled">
                                         <li>
                                             <div class="footer-widget__post-img">
                                                 <img src="assets/images/resources/consulting.jpg" alt="">
                                             </div>
                                             <div class="footer-widget__post-content">
-                                                <h3 class="footer-widget__post-title"><a href="blog-details.html">The
-                                                        Surfing Man Will Blow Your Mind</a></h3>
+                                                <h3 class="footer-widget__post-title"><a href="blog-details.html" data-i18n="about_page.footer_post1_title">Moderniser son entreprise avec la technologie</a></h3>
                                                 <p class="footer-widget__post-date"><span class="fas fa-calendar-alt">
-                                                    </span>March 22, 2025</p>
+                                                    </span><span data-i18n="about_page.footer_post1_date">Mars 22, 2025</span></p>
                                             </div>
                                         </li>
                                         <li>
@@ -820,10 +610,9 @@
                                                 <img src="assets/images/resources/service.jpg" alt="">
                                             </div>
                                             <div class="footer-widget__post-content">
-                                                <h3 class="footer-widget__post-title"><a href="blog-details.html">Top 5
-                                                        Most Famous Technology Trend In 2025</a></h3>
+                                                <h3 class="footer-widget__post-title"><a href="blog-details.html" data-i18n="about_page.footer_post2_title">5 tendances technologiques majeures en 2025</a></h3>
                                                 <p class="footer-widget__post-date"> <span
-                                                        class="fas fa-calendar-alt"></span>Feb 17, 2025</p>
+                                                        class="fas fa-calendar-alt"></span><span data-i18n="about_page.footer_post2_date">Fev 17, 2025</span></p>
                                             </div>
                                         </li>
                                     </ul>
@@ -831,26 +620,25 @@
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                                 <div class="footer-widget__contact">
-                                    <h3 class="footer-widget__title">Contact Us</h3>
+                                    <h3 class="footer-widget__title" data-i18n="about_page.footer_contact_title">Contact</h3>
                                     <ul class="footer-widget__contact-list list-unstyled">
                                         <li>
                                             <div class="icon">
                                                 <span class="icon-pin"></span>
                                             </div>
-                                            <p>4140 Parker Rd. Allentown, New
-                                                <br> Mexico 31134</p>
+                                            <p data-i18n="about_page.footer_location">Votre localisation</p>
                                         </li>
                                         <li>
                                             <div class="icon">
                                                 <span class="icon-call"></span>
                                             </div>
-                                            <p><a href="tel:2195550114">(219) 555-0114</a></p>
+                                            <p><a href="tel:+12489381944">+1 (248) 938 1944</a></p>
                                         </li>
                                         <li>
                                             <div class="icon">
                                                 <span class="icon-email"></span>
                                             </div>
-                                            <p><a href="mailto:Itzone@gmail.com">Itzone@gmail.com</a></p>
+                                            <p><a href="mailto:contact@mhtechconsulting.com">contact@mhtechconsulting.com</a></p>
                                         </li>
                                     </ul>
                                 </div>
@@ -865,15 +653,12 @@
                         <div class="col-xl-12">
                             <div class="site-footer__bottom-inner">
                                 <div class="site-footer__copyright">
-                                    <p class="site-footer__copyright-text">© 2025 Itzone By <a
-                                            href="https://themeforest.net/user/dreamlayout">Dreamlayout.</a> All
-                                        Rights
-                                        Reserved.</p>
+                                    <p class="site-footer__copyright-text" data-i18n="about_page.footer_copyright">(c) 2025 MHTECH Consulting. Tous droits reserves.</p>
                                 </div>
                                 <div class="site-footer__bottom-menu-box">
                                     <ul class="list-unstyled site-footer__bottom-menu">
-                                        <li><a href="about.html">Terms of Service</a></li>
-                                        <li><a href="about.html">Privacy policy</a></li>
+                                        <li><a href="about.html" data-i18n="about_page.footer_terms">Conditions d'utilisation</a></li>
+                                        <li><a href="about.html" data-i18n="about_page.footer_privacy">Politique de confidentialite</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -907,11 +692,11 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@packageName__.com">needhelp@Itzone.com</a>
+                    <a href="mailto:contact@mhtechconsulting.com">contact@mhtechconsulting.com</a>
                 </li>
                 <li>
                     <i class="fas fa-phone"></i>
-                    <a href="tel:666-888-0000">666 888 0000</a>
+                    <a href="tel:+12489381944">+1 (248) 938 1944</a>
                 </li>
             </ul><!-- /.mobile-nav__contact -->
             <div class="mobile-nav__top">
@@ -936,7 +721,7 @@
         <button class="close-search"><span class="far fa-times fa-fw"></span></button>
         <form method="post" action="blog.html">
             <div class="form-group">
-                <input type="search" name="search-field" value="" placeholder="Search Here" required="">
+                <input type="search" name="search-field" value="" data-i18n-placeholder="about_page.search_placeholder" placeholder="Rechercher" required="">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
         </form>
@@ -945,7 +730,7 @@
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
         <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
-        <span class="scroll-to-top__text"> Go Back Top</span>
+        <span class="scroll-to-top__text" data-i18n="about_page.scroll_to_top">Retour en haut</span>
     </a>
 
 
@@ -979,13 +764,11 @@
     <script src="assets/js/gsap/ScrollTrigger.js"></script>
     <script src="assets/js/gsap/SplitText.js"></script>
 
-
-
-
-
     <!-- template js -->
     <script src="assets/js/script.js"></script>
+
+    <!-- i18n translation system -->
+    <script src="assets/js/i18n.js?v=2"></script>
 </body>
 
 </html>
-

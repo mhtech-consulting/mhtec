@@ -90,6 +90,7 @@ class I18n {
         this.updatePageTitle();
         this.updateLanguageButton();
         this.refreshAnimatedTitles();
+        this.refreshSelectPickers();
     }
 
     containsHtml(value) {
@@ -114,6 +115,18 @@ class I18n {
     refreshAnimatedTitles() {
         if (window.ScrollTrigger && typeof window.ScrollTrigger.refresh === 'function') {
             window.ScrollTrigger.refresh();
+        }
+    }
+
+    refreshSelectPickers() {
+        if (window.jQuery) {
+            const $ = window.jQuery;
+            if (typeof $.fn.niceSelect === 'function') {
+                $('select').niceSelect('update');
+            }
+            if (typeof $.fn.selectpicker === 'function') {
+                $('.selectpicker').selectpicker('refresh');
+            }
         }
     }
 

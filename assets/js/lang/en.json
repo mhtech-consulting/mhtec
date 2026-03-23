@@ -19,7 +19,7 @@
                 "contact":  "Contact"
             },
     "header":  {
-                   "location":  "Your location",
+                   "location":  "Our location",
                    "welcome_text":  "MHTECH Consulting supports your digital transformation",
                    "follow_us":  "Follow us:",
                    "contact_label":  "Contact"
@@ -33,6 +33,7 @@
     "about":  {
                   "tagline":  "Who we are",
                   "title":  "Modern technology solutions to support your growth",
+                  "title_html":  "Modern technology solutions <br><span>to support your growth</span>",
                   "title_part1":  "Modern technology solutions",
                   "title_part2":  "to support your growth",
                   "description":  "MH Tech Consulting supports businesses in their technology projects by offering IT consulting, cybersecurity, DevOps, digital design and IT operations services. We also provide qualified IT talent to meet organizations\u0027 recruitment needs.",
@@ -48,6 +49,7 @@
     "services":  {
                      "tagline":  "Our areas of expertise",
                      "title":  "4 areas of expertise to make your IT projects successful",
+                     "title_html":  "4 areas of expertise <br><span>to make your IT projects successful</span>",
                      "title_part1":  "4 areas of expertise",
                      "title_part2":  "to make your IT projects successful",
                      "cybersecurity_title":  "Cybersecurity",
@@ -67,6 +69,7 @@
     "why_choose":  {
                        "tagline":  "WHY MH TECH CONSULTING",
                        "title":  "4 reasons to choose us for your IT projects",
+                       "title_html":  "4 reasons to choose us <span>for your IT projects</span>",
                        "title_part1":  "4 reasons to choose us",
                        "title_part2":  "for your IT projects",
                        "description":  "With our technical expertise and personalized approach, we support businesses in their technological success with tailored solutions and qualified talent.",
@@ -83,6 +86,7 @@
     "process":  {
                     "tagline":  "Work process",
                     "title":  "How we work",
+                    "title_html":  "How we <span>work</span>",
                     "step1_title":  "Assess the context",
                     "step1_desc":  "We frame your business priorities, technical constraints and transformation goals.",
                     "step2_title":  "Define the roadmap",
@@ -99,16 +103,21 @@
                     "item4":  "IT Consulting",
                     "item5":  "Digital Design",
                     "item6":  "IT Staffing",
-                    "item7":  "Project Governance"
+                    "item7":  "Project Governance",
+                    "item8":  "Strategic IT Consulting"
                 },
     "portfolio":  {
                       "tagline":  "Portfolio",
                       "title":  "Discover our latest Projects",
+                      "title_html":  "Discover our latest <span>Projects</span>",
                       "project1_title":  "Innovative solutions, Powerful Results",
                       "project1_desc":  "Explore how we have empowered businesses with innovative technology solutions",
                       "project2_title":  "Transforming ideas into digital excellence",
                       "project3_title":  "Succeeding through technology",
-                      "project4_title":  "Supporting businesses with cutting-edge IT"
+                      "project4_title":  "Supporting businesses with cutting-edge IT",
+                      "project2_desc":  "Explore how we have empowered businesses with innovative technology solutions",
+                      "project3_desc":  "Explore how we have empowered businesses with innovative technology solutions",
+                      "project4_desc":  "Explore how we have empowered businesses with innovative technology solutions"
                   },
     "counter":  {
                     "projects_completed":  "Completed projects",
@@ -136,6 +145,7 @@
     "contact":  {
                     "tagline":  "Contact",
                     "title":  "Let\u0027s talk about your technology solutions",
+                    "title_html":  "Let\u0027s talk about your <span>technology solutions</span>",
                     "title_part1":  "Let\u0027s Talk",
                     "title_part2":  "About Your",
                     "title_part3":  "Technology Solutions",
@@ -172,6 +182,7 @@
     "faq":  {
                 "tagline":  "Frequently asked questions",
                 "title":  "Do you have questions in mind? Get the answers now",
+                "title_html":  "Do you have questions in <span>mind?</span> Get the answers now",
                 "question1":  "How does the support work?",
                 "answer1":  "From initial analysis to implementation, we prioritize quality, reliability and customer satisfaction in every intervention. Make us your trusted partner to achieve your goals.",
                 "question2":  "Will the solution be tailored to my business?",
@@ -180,11 +191,13 @@
                 "answer3":  "We support you through all preparation stages: initial audit, detailed planning, team training and progressive implementation to ensure a smooth transition.",
                 "question4":  "How to choose the right solution?",
                 "answer4":  "Our team of experts analyzes your needs, existing infrastructure and future goals to recommend the most suitable and efficient solution.",
-                "years_experience":  "Years of experience"
+                "years_experience":  "Years of experience",
+                "experience_text":  "Years of experience"
             },
     "blog":  {
                  "tagline":  "Our blog",
                  "title":  "News and articles from our blog",
+                 "title_html":  "News and articles <br>from our <span>blog</span>",
                  "tag1":  "Digital",
                  "tag2":  "Technology",
                  "date1":  "April 5, 2025",
@@ -208,7 +221,9 @@
                        "title":  "Receive our technology news",
                        "description":  "Follow our insights on digital transformation, cybersecurity and IT solutions for businesses.",
                        "email_placeholder":  "Enter your email",
-                       "subscribe_button":  "Subscribe"
+                       "subscribe_button":  "Subscribe",
+                       "subscribe_button_html":  "Subscribe <span class=\"fas fa-arrow-right\"></span>",
+                       "privacy_label":  "By subscribing, you accept our privacy policy"
                    },
     "footer":  {
                    "about_text":  "MHTECH Consulting supports businesses in the design, development and security of their digital solutions.",
@@ -225,7 +240,7 @@
                    "service4":  "IT Staffing",
                    "service5":  "Strategic IT Consulting",
                    "contact_title":  "Contact",
-                   "location":  "Your location",
+                   "location":  "Our location",
                    "copyright":  "Â© 2025 MHTECH Consulting. All rights reserved.",
                    "terms":  "Terms of use",
                    "privacy":  "Privacy policy"
@@ -292,6 +307,7 @@
                        "breadcrumb_about":  "About MHTECH",
                        "tagline":  "Who we are",
                        "main_title":  "Your partner to design, develop and secure your digital solutions",
+                       "main_title_html":  "Your partner to design, develop and secure <br><span>your digital solutions</span>",
                        "description":  "MHTECH Consulting is a company specializing in technology services and IT consulting. We combine technical expertise, innovation and creativity to provide effective solutions for modern businesses.",
                        "mission_title":  "Our mission",
                        "mission_desc":  "Help organizations integrate modern technology solutions that improve their productivity, secure their infrastructure and strengthen their competitiveness.",
@@ -304,6 +320,7 @@
                        "years_experience":  "Years of Experience",
                        "services_tagline":  "Our expertise",
                        "services_title":  "Our expertise to structure, secure and evolve your IT landscape",
+                       "services_title_html":  "Our expertise to structure, secure and evolve your <span>IT landscape</span>",
                        "service1_title":  "Cybersecurity",
                        "service1_desc":  "Assessment, protection, access management and compliance support to reduce exposure.",
                        "service2_title":  "DevOps \u0026 Cloud",
@@ -327,6 +344,7 @@
                        "sliding_performance":  "Performance",
                        "values_tagline":  "Our values",
                        "values_title":  "The values that guide MHTECH",
+                       "values_title_html":  "The values that guide <span>MHTECH</span>",
                        "value1_title":  "Innovation",
                        "value1_desc":  "Modern technologies and high-performance solutions",
                        "value2_title":  "Excellence",
@@ -339,12 +357,13 @@
                        "value5_desc":  "Robust, sustainable and consistent solutions",
                        "value6_title":  "Expertise",
                        "value6_desc":  "Technical expertise at the service of your growth",
-                       "counter1_label":  "award Winning",
-                       "counter2_label":  "Satisfied client",
-                       "counter3_label":  "worldwide reviews",
+                       "counter1_label":  "Award-winning",
+                       "counter2_label":  "Satisfied clients",
+                       "counter3_label":  "Global reviews",
                        "counter4_label":  "Satisfied clients",
                        "testimonials_tagline":  "Testimonials",
                        "testimonials_title":  "What our clients say",
+                       "testimonials_title_html":  "What our clients <span>say</span>",
                        "testimonial1_name":  "Adam Smith",
                        "testimonial2_name":  "Robert Son",
                        "testimonial3_name":  "Alisha Martin",
@@ -354,6 +373,7 @@
                        "testimonial3_text":  "MHTECH Consulting offers reliable, modern support tailored to the real needs of businesses.",
                        "blog_tagline":  "Our blog",
                        "blog_title":  "News and articles from our blog",
+                       "blog_title_html":  "News and articles <br>from our <span>blog</span>",
                        "blog1_author":  "Malaika alise",
                        "blog1_date":  "April 5, 2025",
                        "blog1_comments":  "80 comments",
@@ -387,7 +407,7 @@
                        "footer_post2_title":  "5 ways to improve IT operations reliability",
                        "footer_post2_date":  "Feb 17, 2025",
                        "footer_contact_title":  "Contact",
-                       "footer_location":  "Your location",
+                       "footer_location":  "Our location",
                        "footer_copyright":  "Â© 2025 MHTECH Consulting. All rights reserved.",
                        "footer_terms":  "Terms of use",
                        "footer_privacy":  "Privacy policy",
@@ -447,7 +467,21 @@
                           "newsletter_title":  "Receive our technology news",
                           "newsletter_text":  "Follow our insights on security, infrastructure and digital transformation.",
                           "newsletter_placeholder":  "Enter your email",
-                          "newsletter_button":  "Subscribe"
+                          "newsletter_button":  "Subscribe",
+                          "pricing_plan1_name":  "Essential Plan",
+                          "pricing_plan1_price":  "$35.00",
+                          "pricing_subtitle":  "Choose the plan that fits your needs",
+                          "pricing_feature1":  "Multilingual content",
+                          "pricing_feature2":  "Configurable chatbots",
+                          "pricing_feature3":  "Digital analytics",
+                          "pricing_feature4":  "Social media marketing",
+                          "pricing_feature5":  "Technical support",
+                          "pricing_cta":  "Choose plan",
+                          "pricing_recommended":  "Recommended",
+                          "pricing_plan2_name":  "Standard Plan",
+                          "pricing_plan2_price":  "$75.00",
+                          "pricing_plan3_name":  "Premium Plan",
+                          "pricing_plan3_price":  "$93.00"
                       },
     "contact_page":  {
                          "page_title":  "Contact",
@@ -541,16 +575,25 @@
                               "testimonial1_text":  "MHTECH Consulting has transformed our IT infrastructure. Their technical expertise and responsiveness exceeded our expectations. A team of highly qualified professionals who truly understand business challenges.",
                               "testimonial1_name":  "Sophie Martin",
                               "testimonial1_title":  "IT Director, BNP Paribas",
-                              "testimonial2_text":  "Thanks to MHTECH\u0027s IT staffing service, we quickly found expert profiles for our digital transformation project. Personalized support and very high level consultants.",
+                              "testimonial2_text":  "Thanks to MHTECH\u0027s IT staffing service, we quickly found expert profiles for our digital transformation project. The support was personalized and the consultants were highly skilled.",
                               "testimonial2_name":  "Marc Dubois",
                               "testimonial2_title":  "Project Manager, Orange",
-                              "testimonial3_text":  "Trusted partner for our company for 3 years. MHTECH supports us on all our IT needs with professionalism and efficiency. Their consulting approach brings real strategic added value.",
+                              "testimonial3_text":  "MHTECH has been a trusted partner for our company for the past three years. They support all our IT needs with professionalism and efficiency. Their consulting approach brings real strategic value.",
                               "testimonial3_name":  "Pierre Laurent",
                               "testimonial3_title":  "CEO, Capgemini",
                               "newsletter_title":  "Subscribe to Our Newsletter",
                               "newsletter_text":  "Receive our insights on cybersecurity, cloud, IT staffing and operational performance.",
                               "newsletter_placeholder":  "Enter email address",
-                              "newsletter_button":  "Subscribe"
+                              "newsletter_button":  "Subscribe",
+                              "testimonial4_text":  "MHTECH consultants brought sharp expertise to our Cloud project. Their adaptability and technical mastery helped us complete our migration on schedule.",
+                              "testimonial4_name":  "Amelie Bernard",
+                              "testimonial4_role":  "Infrastructure Manager, Societe Generale",
+                              "testimonial5_text":  "Exceptional staffing service! MHTECH understood our specific needs and proposed perfectly aligned profiles. The follow-up and candidate quality are outstanding.",
+                              "testimonial5_name":  "Julie Rousseau",
+                              "testimonial5_role":  "HR Director, Airbus",
+                              "testimonial6_text":  "MHTECH Consulting supports us with excellence on our digital strategy. Their business vision combined with technical expertise makes all the difference. A fruitful and enriching collaboration.",
+                              "testimonial6_name":  "David Moreau",
+                              "testimonial6_role":  "Digital Director, Carrefour"
                           },
     "staffing_page":  {
                           "page_title":  "IT Staffing",
@@ -812,5 +855,65 @@
                            "point2":  "Requirement breakdown, user stories, acceptance criteria and delivery priorities.",
                            "point3":  "Ceremonies, roles, indicators and steering of dependencies across teams and stakeholders.",
                            "point4":  "Reporting, risk management, arbitration and delivery quality tracking."
-                       }
+                       },
+    "blog_details":  {
+                         "page_title":  "Article Details",
+                         "breadcrumb_home":  "Home",
+                         "breadcrumb_current":  "Details",
+                         "by_admin":  "By Admin",
+                         "comments":  "Comments (05)",
+                         "read_time":  "4 Min Read",
+                         "article_title":  "Top IT Trends in 2025: What Businesses Need to Know",
+                         "article_text1":  "Digital transformation is accelerating and businesses must adapt to stay competitive. Artificial intelligence, cloud computing and cybersecurity are at the heart of modern technology strategies. Understanding these trends is essential for making the right decisions.",
+                         "article_text2":  "Forward-thinking leaders always prioritize technology investments that offer the best return on investment while minimizing operational risks.",
+                         "quote":  "\"Investing in technology is no longer an option, it's a strategic necessity. Companies that embrace innovation are the ones that thrive in an ever-changing market.\"",
+                         "subtitle":  "How to Succeed in Digital Transformation",
+                         "article_text3":  "The key to a successful digital transformation lies in a clear strategy, tailored support and high-performance tools. It is essential to define measurable objectives, involve teams and choose the right technology partners to ensure the success of each project.",
+                         "tags_label":  "Tags:",
+                         "tag1":  "Cybersecurity",
+                         "tag2":  "Cloud",
+                         "tag3":  "Transformation",
+                         "share_label":  "Share:",
+                         "leave_reply":  "Leave a Reply",
+                         "form_notice":  "By using this form you agree with message storage. You can also contact us directly.",
+                         "your_name":  "Your Name",
+                         "your_email":  "Your Email",
+                         "your_message":  "Your Message",
+                         "submit_btn":  "Submit",
+                         "search_placeholder":  "Search...",
+                         "categories_title":  "Categories",
+                         "cat_cybersecurity":  "Cybersecurity (12)",
+                         "cat_devops":  "DevOps \u0026 Cloud (15)",
+                         "cat_design":  "Digital Design \u0026 Experience (08)",
+                         "cat_operations":  "IT Operations (20)",
+                         "cat_consulting":  "Strategic IT Consulting (14)",
+                         "cat_analysis":  "Project Analysis \u0026 Governance (05)",
+                         "recent_posts":  "Recent Posts",
+                         "post1_date":  "March 18, 2025",
+                         "post1_title":  "Modernize Your Business with Technology",
+                         "post2_date":  "April 18, 2025",
+                         "post2_title":  "5 Major Technology Trends in 2025",
+                         "post3_date":  "June 18, 2025",
+                         "post3_title":  "Cybersecurity: Protecting Your Digital Assets",
+                         "tags_cloud":  "Tags Cloud"
+                     },
+    "blog_home":  {
+                      "tag_digital":  "Digital",
+                      "tag_technology":  "Technology",
+                      "post1_author":  "Malaika Alise",
+                      "post1_date":  "April 5, 2025",
+                      "post1_comments":  "80 comments",
+                      "post2_author":  "John Smith",
+                      "post2_date":  "Feb 25, 2025",
+                      "post2_comments":  "22 comments",
+                      "post3_author":  "Jerin Jara",
+                      "post3_date":  "May 19, 2025",
+                      "post3_comments":  "15 comments"
+                  },
+    "services_home":  {
+                          "service5_title":  "Technology Solutions",
+                          "service5_desc":  "IT consulting, cloud solutions, process automation and modern technology platforms.",
+                          "service6_title":  "Strategic Consulting",
+                          "service6_desc":  "Needs analysis, project framing and support for technology decision-making."
+                      }
 }

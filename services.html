@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-mhtech.svg" />
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-mhtech.svg" />
     <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-    <meta name="description" content="MHTECH Consulting accompagne les entreprises avec des solutions IT, digitales et securisees." />
+    <meta name="description" content="Nos services IT : cybersecurite, DevOps & Cloud, design digital, operations IT, conseil strategique et pilotage projet. MHTECH Consulting." />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -219,7 +219,7 @@
                                 <i class="icon-pin"></i>
                             </div>
                             <div class="text">
-                                <p>Votre localisation</p>
+                                <p><span data-i18n="footer.location">Votre localisation</span></p>
                             </div>
                         </li>
                     </ul>
@@ -255,12 +255,12 @@
                                 <li class="dropdown">
                                     <a href="services.html" data-i18n="nav.services">Services IT</a>
                                     <ul class="sub-menu">
-                                        <li><a href="software-development.html" data-i18n="nav.software_dev">Developpement Logiciel</a></li>
-                                        <li><a href="web-development.html" data-i18n="nav.web_dev">Developpement Web</a></li>
-                                        <li><a href="ui-ux-design.html" data-i18n="nav.ui_ux">Design UI/UX</a></li>
-                                        <li><a href="digital-marketing.html" data-i18n="nav.digital_marketing">Marketing Digital</a></li>
-                                        <li><a href="business-analysis.html" data-i18n="nav.business_analysis">Analyse Metier</a></li>
-                                        <li><a href="product-design.html" data-i18n="nav.product_design">Conception Produit</a></li>
+                                        <li><a href="software-development.html" data-i18n="nav.software_dev">Cybersecurite</a></li>
+                                        <li><a href="web-development.html" data-i18n="nav.web_dev">DevOps & Cloud</a></li>
+                                        <li><a href="ui-ux-design.html" data-i18n="nav.ui_ux">Design & Experience digitale</a></li>
+                                        <li><a href="digital-marketing.html" data-i18n="nav.digital_marketing">Operations IT & Help Desk</a></li>
+                                        <li><a href="business-analysis.html" data-i18n="nav.business_analysis">Conseil IT strategique</a></li>
+                                        <li><a href="product-design.html" data-i18n="nav.product_design">Analyse & pilotage projet</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -279,8 +279,8 @@
                         </div>
                         <div class="main-menu__right">
                             <div class="language-switcher">
-                                <button class="lang-btn active" data-lang="fr">FR</button>
-                                <button class="lang-btn" data-lang="en">EN</button>
+                                <button class="lang-btn" data-lang="fr">FR</button>
+                                <button class="lang-btn active" data-lang="en">EN</button>
                             </div>
                             <div class="main-menu__nav-sidebar-icon">
                                 <a class="navSidebar-button" href="#">
@@ -482,8 +482,8 @@
                                 <div class="section-title__tagline-box">
                                     <span class="section-title__tagline" data-i18n="services_page.contact_tagline">Contact</span>
                                 </div>
-                                <h2 class="section-title__title title-animation" data-i18n="services_page.contact_title">Construisons votre prochaine
-                                    <span>Technologie Solution</span>
+                                <h2 class="section-title__title title-animation" data-i18n-html="services_page.contact_title_html">Construisons votre prochaine
+                                    <span>solution technologique</span>
                                 </h2>
                             </div>
                             <p class="contact-three__text" data-i18n="services_page.contact_description">Vous avez un projet technologique ou souhaitez moderniser
@@ -514,7 +514,7 @@
                                     </div>
                                     <div class="content">
                                         <span data-i18n="services_page.contact_address_label">Adresse</span>
-                                        <p>Votre localisation</p>
+                                        <p><span data-i18n="footer.location">Votre localisation</span></p>
                                     </div>
                                 </li>
                             </ul>
@@ -522,9 +522,7 @@
                     </div>
                     <div class="col-xl-6">
                         <div class="contact-three__right">
-                            <div class="contact-three__img-1">
-                                <img src="assets/images/resources/contact.jpg" alt="Echange entre MH Tech Consulting et un client">
-                            </div>
+                           
                             <div class="contact-one__right">
                                 <form class="contact-form-validated contact-one__form" action="assets/inc/sendemail.php"
                                     method="post">
@@ -696,9 +694,9 @@
                                 <div class="pricing-one__price-box-shape"
                                     style="background-image: url(assets/images/shapes/pricing-one-price-box-shape-1.png);">
                                 </div>
-                                <span>Offre essentielle</span>
-                                <h3 class="pricing-one__price">$35.00</h3>
-                                <p class="pricing-one__price-sub-title">Choisissez la formule adaptee</p>
+                                <span data-i18n="services_page.pricing_plan1_name">Offre essentielle</span>
+                                <h3 class="pricing-one__price" data-i18n="services_page.pricing_plan1_price">$35.00</h3>
+                                <p class="pricing-one__price-sub-title" data-i18n="services_page.pricing_subtitle">Choisissez la formule adaptee</p>
                             </div>
                             <div class="pricing-one__points-and-btn">
                                 <ul class="pricing-one__price-points list-unstyled">
@@ -706,35 +704,35 @@
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Contenus multilingues</p>
+                                        <p data-i18n="services_page.pricing_feature1">Contenus multilingues</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Chatbots parametrables</p>
+                                        <p data-i18n="services_page.pricing_feature2">Chatbots parametrables</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Analyse digitale</p>
+                                        <p data-i18n="services_page.pricing_feature3">Analyse digitale</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Marketing des reseaux sociaux</p>
+                                        <p data-i18n="services_page.pricing_feature4">Marketing des reseaux sociaux</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Support technique</p>
+                                        <p data-i18n="services_page.pricing_feature5">Support technique</p>
                                     </li>
                                 </ul>
                                 <div class="pricing-one__btn-box">
-                                    <a href="pricing.html" class="thm-btn">Choisir l'offre
+                                    <a href="pricing.html" class="thm-btn" data-i18n="services_page.pricing_cta">Choisir l'offre
                                         <span class="fas fa-arrow-right"></span>
                                     </a>
                                 </div>
@@ -751,11 +749,11 @@
                                     style="background-image: url(assets/images/shapes/pricing-one-price-box-shape-1.png);">
                                 </div>
                                 <div class="pricing-one__recomanded">
-                                    <span>Recommande</span>
+                                    <span data-i18n="services_page.pricing_recommended">Recommande</span>
                                 </div>
-                                <span>Offre standard</span>
-                                <h3 class="pricing-one__price">$75.00</h3>
-                                <p class="pricing-one__price-sub-title">Choisissez la formule adaptee</p>
+                                <span data-i18n="services_page.pricing_plan2_name">Offre standard</span>
+                                <h3 class="pricing-one__price" data-i18n="services_page.pricing_plan2_price">$75.00</h3>
+                                <p class="pricing-one__price-sub-title" data-i18n="services_page.pricing_subtitle">Choisissez la formule adaptee</p>
                             </div>
                             <div class="pricing-one__points-and-btn">
                                 <ul class="pricing-one__price-points list-unstyled">
@@ -763,35 +761,35 @@
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Contenus multilingues</p>
+                                        <p data-i18n="services_page.pricing_feature1">Contenus multilingues</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Chatbots parametrables</p>
+                                        <p data-i18n="services_page.pricing_feature2">Chatbots parametrables</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Analyse digitale</p>
+                                        <p data-i18n="services_page.pricing_feature3">Analyse digitale</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Marketing des reseaux sociaux</p>
+                                        <p data-i18n="services_page.pricing_feature4">Marketing des reseaux sociaux</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Support technique</p>
+                                        <p data-i18n="services_page.pricing_feature5">Support technique</p>
                                     </li>
                                 </ul>
                                 <div class="pricing-one__btn-box">
-                                    <a href="pricing.html" class="thm-btn">Choisir l'offre
+                                    <a href="pricing.html" class="thm-btn" data-i18n="services_page.pricing_cta">Choisir l'offre
                                         <span class="fas fa-arrow-right"></span>
                                     </a>
                                 </div>
@@ -806,9 +804,9 @@
                                 <div class="pricing-one__price-box-shape"
                                     style="background-image: url(assets/images/shapes/pricing-one-price-box-shape-1.png);">
                                 </div>
-                                <span>Offre premium</span>
-                                <h3 class="pricing-one__price">$93.00</h3>
-                                <p class="pricing-one__price-sub-title">Choisissez la formule adaptee</p>
+                                <span data-i18n="services_page.pricing_plan3_name">Offre premium</span>
+                                <h3 class="pricing-one__price" data-i18n="services_page.pricing_plan3_price">$93.00</h3>
+                                <p class="pricing-one__price-sub-title" data-i18n="services_page.pricing_subtitle">Choisissez la formule adaptee</p>
                             </div>
                             <div class="pricing-one__points-and-btn">
                                 <ul class="pricing-one__price-points list-unstyled">
@@ -816,35 +814,35 @@
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Contenus multilingues</p>
+                                        <p data-i18n="services_page.pricing_feature1">Contenus multilingues</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Chatbots parametrables</p>
+                                        <p data-i18n="services_page.pricing_feature2">Chatbots parametrables</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Analyse digitale</p>
+                                        <p data-i18n="services_page.pricing_feature3">Analyse digitale</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Marketing des reseaux sociaux</p>
+                                        <p data-i18n="services_page.pricing_feature4">Marketing des reseaux sociaux</p>
                                     </li>
                                     <li>
                                         <div class="icon">
                                             <span class="icon-check"></span>
                                         </div>
-                                        <p>Support technique</p>
+                                        <p data-i18n="services_page.pricing_feature5">Support technique</p>
                                     </li>
                                 </ul>
                                 <div class="pricing-one__btn-box">
-                                    <a href="pricing.html" class="thm-btn">Choisir l'offre
+                                    <a href="pricing.html" class="thm-btn" data-i18n="services_page.pricing_cta">Choisir l'offre
                                         <span class="fas fa-arrow-right"></span>
                                     </a>
                                 </div>
@@ -902,7 +900,7 @@
                                     <div class="footer-widget__about-logo">
                                         <a href="index.html"><img src="assets/images/resources/logo-mhtech-footer.svg" alt=""></a>
                                     </div>
-                                    <p class="footer-widget__about-text">MHTECH Consulting accompagne les entreprises
+                                    <p class="footer-widget__about-text" data-i18n="about_page.footer_about">MHTECH Consulting accompagne les entreprises
                                         dans la conception, le developpement et la securisation de leurs solutions
                                         numeriques.</p>
                                     <div class="footer-widget__social">
@@ -915,28 +913,28 @@
                             </div>
                             <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                                 <div class="footer-widget__links">
-                                    <h4 class="footer-widget__title">Liens rapides</h4>
+                                    <h4 class="footer-widget__title" data-i18n="about_page.footer_quick_links">Liens rapides</h4>
                                     <ul class="footer-widget__links-list list-unstyled">
-                                        <li><a href="index.html">Accueil</a></li>
-                                        <li><a href="about.html">A propos</a></li>
-                                        <li><a href="projects.html">Projets</a></li>
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="index.html" data-i18n="about_page.footer_link_home">Accueil</a></li>
+                                        <li><a href="about.html" data-i18n="about_page.footer_link_about">A propos</a></li>
+                                        <li><a href="projects.html" data-i18n="about_page.footer_link_projects">Projets</a></li>
+                                        <li><a href="services.html" data-i18n="about_page.footer_link_services">Services</a></li>
+                                        <li><a href="contact.html" data-i18n="about_page.footer_link_contact">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                                 <div class="footer-widget__post-box">
-                                    <h4 class="footer-widget__title">Articles recents</h4>
+                                    <h4 class="footer-widget__title" data-i18n="about_page.footer_recent_posts">Articles recents</h4>
                                     <ul class="footer-widget__post list-unstyled">
                                         <li>
                                             <div class="footer-widget__post-img">
                                                 <img src="assets/images/resources/consulting.jpg" alt="">
                                             </div>
                                             <div class="footer-widget__post-content">
-                                                <h3 class="footer-widget__post-title"><a href="blog-details.html">Moderniser son entreprise avec la technologie</a></h3>
+                                                <h3 class="footer-widget__post-title"><a href="blog-details.html" data-i18n="about_page.footer_post1_title">Moderniser son entreprise avec la technologie</a></h3>
                                                 <p class="footer-widget__post-date"><span class="fas fa-calendar-alt">
-                                                    </span>Mars 22, 2025</p>
+                                                    </span><span data-i18n="about_page.footer_post1_date">Mars 22, 2025</span></p>
                                             </div>
                                         </li>
                                         <li>
@@ -944,9 +942,9 @@
                                                 <img src="assets/images/resources/service.jpg" alt="">
                                             </div>
                                             <div class="footer-widget__post-content">
-                                                <h3 class="footer-widget__post-title"><a href="blog-details.html">5 tendances technologiques majeures en 2025</a></h3>
+                                                <h3 class="footer-widget__post-title"><a href="blog-details.html" data-i18n="about_page.footer_post2_title">5 tendances technologiques majeures en 2025</a></h3>
                                                 <p class="footer-widget__post-date"> <span
-                                                        class="fas fa-calendar-alt"></span>Fev 17, 2025</p>
+                                                        class="fas fa-calendar-alt"></span><span data-i18n="about_page.footer_post2_date">Fev 17, 2025</span></p>
                                             </div>
                                         </li>
                                     </ul>
@@ -954,13 +952,13 @@
                             </div>
                             <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                                 <div class="footer-widget__contact">
-                                    <h3 class="footer-widget__title">Contact</h3>
+                                    <h3 class="footer-widget__title" data-i18n="about_page.footer_contact_title">Contact</h3>
                                     <ul class="footer-widget__contact-list list-unstyled">
                                         <li>
                                             <div class="icon">
                                                 <span class="icon-pin"></span>
                                             </div>
-                                            <p>Votre localisation</p>
+                                            <p data-i18n="about_page.footer_location">Votre localisation</p>
                                         </li>
                                         <li>
                                             <div class="icon">
@@ -987,12 +985,12 @@
                         <div class="col-xl-12">
                             <div class="site-footer__bottom-inner">
                                 <div class="site-footer__copyright">
-                                    <p class="site-footer__copyright-text">(c) 2025 MHTECH Consulting. Tous droits reserves.</p>
+                                    <p class="site-footer__copyright-text" data-i18n="about_page.footer_copyright">(c) 2025 MHTECH Consulting. Tous droits reserves.</p>
                                 </div>
                                 <div class="site-footer__bottom-menu-box">
                                     <ul class="list-unstyled site-footer__bottom-menu">
-                                        <li><a href="about.html">Conditions d'utilisation</a></li>
-                                        <li><a href="about.html">Politique de confidentialite</a></li>
+                                        <li><a href="about.html" data-i18n="about_page.footer_terms">Conditions d'utilisation</a></li>
+                                        <li><a href="about.html" data-i18n="about_page.footer_privacy">Politique de confidentialite</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1055,7 +1053,7 @@
         <button class="close-search"><span class="far fa-times fa-fw"></span></button>
         <form method="post" action="blog.html">
             <div class="form-group">
-                <input type="search" name="search-field" value="" placeholder="Rechercher" required="">
+                <input type="search" name="search-field" value="" placeholder="Rechercher" data-i18n-placeholder="about_page.search_placeholder" required="">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
         </form>
@@ -1064,7 +1062,7 @@
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
         <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
-        <span class="scroll-to-top__text">Retour en haut</span>
+        <span class="scroll-to-top__text" data-i18n="about_page.scroll_to_top">Retour en haut</span>
     </a>
 
 
@@ -1108,7 +1106,6 @@
 </body>
 
 </html>
-
 
 
 
