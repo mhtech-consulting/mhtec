@@ -157,6 +157,7 @@ class I18n {
             'staffing.html': 'staffing_page',
             'contact.html': 'contact_page',
             'blog.html': 'blog_page',
+            'blog-details.html': 'blog_details',
             'testimonials.html': 'testimonials_page',
             'projects.html': 'projects_page',
             'software-development.html': 'software_dev',

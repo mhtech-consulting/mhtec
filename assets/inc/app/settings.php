@@ -2,6 +2,17 @@
 require_once __DIR__ . '/Env.php';
 Env::load(__DIR__ . '/../.env');
 
+$httpHost = strtolower((string) ($_SERVER['HTTP_HOST'] ?? ''));
+$serverName = strtolower((string) ($_SERVER['SERVER_NAME'] ?? ''));
+$isLocalEnvironment = in_array($httpHost, ['localhost', '127.0.0.1', '::1'], true)
+    || in_array($serverName, ['localhost', '127.0.0.1', '::1'], true)
+    || PHP_SAPI === 'cli';
+
+$localEnvPath = __DIR__ . '/../.env.local';
+if ($isLocalEnvironment && file_exists($localEnvPath)) {
+    Env::load($localEnvPath, true);
+}
+
 
 require_once __DIR__ .'/PHPMailer/src/Exception.php';
 require_once __DIR__ .'/PHPMailer/src/PHPMailer.php';

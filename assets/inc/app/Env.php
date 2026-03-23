@@ -4,14 +4,11 @@ class Env
 {
     protected static $env = [];
 
-    public static function load(string $path)
+    public static function load(string $path, bool $override = true)
     {
         if (!file_exists($path)) {
             throw new Exception(".env file not found at $path");
         }
-
-        if (!empty(self::$env))
-            return;
 
         $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 
@@ -37,8 +34,10 @@ class Env
 
             }
 
-            self::$env[$name] = $value;
-            putenv("$name=$value");
+            if ($override || !array_key_exists($name, self::$env)) {
+                self::$env[$name] = $value;
+                putenv("$name=$value");
+            }
         }
     }
 
