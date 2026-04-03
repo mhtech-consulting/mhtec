@@ -14,18 +14,22 @@ class I18n {
         const params = new URLSearchParams(window.location.search);
         const urlLang = params.get('lang');
 
+        if (urlLang === 'en') {
+            return 'en';
+        }
+
         if (urlLang === 'fr') {
             return 'fr';
         }
 
-        return localStorage.getItem('mhtech_lang') === 'fr' ? 'fr' : 'en';
+        return localStorage.getItem('mhtech_lang') === 'en' ? 'en' : 'fr';
     }
 
     syncLanguageUrl(lang) {
         const url = new URL(window.location.href);
 
-        if (lang === 'fr') {
-            url.searchParams.set('lang', 'fr');
+        if (lang === 'en') {
+            url.searchParams.set('lang', 'en');
         } else {
             url.searchParams.delete('lang');
         }
@@ -124,6 +128,7 @@ class I18n {
 
         this.updatePageTitle();
         this.updateLanguageButton();
+        this.syncFormLanguageFields();
         this.refreshAnimatedTitles();
         this.refreshSelectPickers();
         window.dispatchEvent(new CustomEvent('mhtech:langchange', {
@@ -168,6 +173,23 @@ class I18n {
                 $('.selectpicker').selectpicker('refresh');
             }
         }
+    }
+
+    syncFormLanguageFields() {
+        const forms = document.querySelectorAll('form[action*="assets/inc/"]');
+
+        forms.forEach((form) => {
+            let input = form.querySelector('input[name="lang"]');
+
+            if (!input) {
+                input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = 'lang';
+                form.appendChild(input);
+            }
+
+            input.value = this.currentLang;
+        });
     }
 
     updateElementTextPreservingChildren(element, translation) {

@@ -1,4 +1,4 @@
-(function () {
+﻿(function () {
     const SITE = {
         origin: "https://mhtechconsulting.com",
         name: "MHTECH Consulting",
@@ -17,7 +17,7 @@
             },
             fr: {
                 name: "Accueil",
-                description: "MHTECH Consulting accompagne les entreprises avec des solutions IT, cloud, cybersécurité et transformation digitale."
+                description: "MHTECH Consulting accompagne les entreprises avec des solutions IT, cloud, cybersÃ©curitÃ© et transformation digitale."
             }
         },
         "about.html": {
@@ -28,7 +28,7 @@
             },
             fr: {
                 name: "A propos de MHTECH",
-                description: "Découvrez MHTECH Consulting, notre mission, nos valeurs et notre expertise en conseil IT, cybersécurité, cloud et transformation digitale."
+                description: "DÃ©couvrez MHTECH Consulting, notre mission, nos valeurs et notre expertise en conseil IT, cybersÃ©curitÃ©, cloud et transformation digitale."
             }
         },
         "services.html": {
@@ -39,7 +39,7 @@
             },
             fr: {
                 name: "Services IT",
-                description: "Découvrez nos services IT : cybersécurité, DevOps et Cloud, design digital, opérations IT, conseil stratégique et pilotage de projet."
+                description: "DÃ©couvrez nos services IT : cybersÃ©curitÃ©, DevOps et Cloud, design digital, opÃ©rations IT, conseil stratÃ©gique et pilotage de projet."
             }
         },
         "staffing.html": {
@@ -50,7 +50,7 @@
             },
             fr: {
                 name: "Staffing IT",
-                description: "MHTECH Consulting aide les entreprises à recruter des talents IT qualifiés et accompagne les candidats dans leurs opportunités."
+                description: "MHTECH Consulting aide les entreprises Ã  recruter des talents IT qualifiÃ©s et accompagne les candidats dans leurs opportunitÃ©s."
             }
         },
         "contact.html": {
@@ -61,7 +61,7 @@
             },
             fr: {
                 name: "Contact",
-                description: "Contactez MHTECH Consulting pour vos projets de conseil IT, cybersécurité, cloud, staffing et transformation digitale."
+                description: "Contactez MHTECH Consulting pour vos projets de conseil IT, cybersÃ©curitÃ©, cloud, staffing et transformation digitale."
             }
         },
         "blog.html": {
@@ -72,7 +72,7 @@
             },
             fr: {
                 name: "Blog",
-                description: "Retrouvez les analyses de MHTECH Consulting sur la cybersécurité, le DevOps, le cloud, les opérations IT et le staffing."
+                description: "Retrouvez les analyses de MHTECH Consulting sur la cybersÃ©curitÃ©, le DevOps, le cloud, les opÃ©rations IT et le staffing."
             }
         },
         "testimonials.html": {
@@ -83,7 +83,7 @@
             },
             fr: {
                 name: "Temoignages",
-                description: "Découvrez les retours de nos clients sur l'accompagnement MHTECH Consulting en conseil IT, staffing et delivery."
+                description: "DÃ©couvrez les retours de nos clients sur l'accompagnement MHTECH Consulting en conseil IT, staffing et delivery."
             }
         },
         "projects.html": {
@@ -94,7 +94,7 @@
             },
             fr: {
                 name: "Projets",
-                description: "Parcourez une sélection de projets MHTECH Consulting en cybersécurité, cloud, delivery digital et opérations IT."
+                description: "Parcourez une sÃ©lection de projets MHTECH Consulting en cybersÃ©curitÃ©, cloud, delivery digital et opÃ©rations IT."
             }
         },
         "software-development.html": {
@@ -105,7 +105,7 @@
             },
             fr: {
                 name: "Cybersecurite",
-                description: "Réduisez les risques avec des services de cybersécurité pragmatiques autour de la protection des accès, de la résilience et de l'exposition."
+                description: "RÃ©duisez les risques avec des services de cybersÃ©curitÃ© pragmatiques autour de la protection des accÃ¨s, de la rÃ©silience et de l'exposition."
             }
         },
         "web-development.html": {
@@ -116,7 +116,7 @@
             },
             fr: {
                 name: "DevOps et Cloud",
-                description: "Accélérez vos livraisons avec des services DevOps et Cloud centrés sur l'automatisation, la fiabilité, l'infrastructure et les pipelines."
+                description: "AccÃ©lÃ©rez vos livraisons avec des services DevOps et Cloud centrÃ©s sur l'automatisation, la fiabilitÃ©, l'infrastructure et les pipelines."
             }
         },
         "ui-ux-design.html": {
@@ -127,7 +127,7 @@
             },
             fr: {
                 name: "Design et experience digitale",
-                description: "Concevez des expériences digitales claires et efficaces alignées sur les usages, les objectifs business et la cohérence de marque."
+                description: "Concevez des expÃ©riences digitales claires et efficaces alignÃ©es sur les usages, les objectifs business et la cohÃ©rence de marque."
             }
         },
         "digital-marketing.html": {
@@ -138,7 +138,7 @@
             },
             fr: {
                 name: "Operations IT et Help Desk",
-                description: "Structurez vos opérations IT et votre support avec des processus fiables, plus de visibilité et une meilleure qualité de service."
+                description: "Structurez vos opÃ©rations IT et votre support avec des processus fiables, plus de visibilitÃ© et une meilleure qualitÃ© de service."
             }
         },
         "business-analysis.html": {
@@ -149,7 +149,7 @@
             },
             fr: {
                 name: "Conseil IT strategique",
-                description: "Clarifiez vos priorités technologiques, votre gouvernance et vos arbitrages avec un conseil IT stratégique aligné au métier."
+                description: "Clarifiez vos prioritÃ©s technologiques, votre gouvernance et vos arbitrages avec un conseil IT stratÃ©gique alignÃ© au mÃ©tier."
             }
         },
         "product-design.html": {
@@ -160,7 +160,7 @@
             },
             fr: {
                 name: "Analyse et pilotage projet",
-                description: "Cadrez vos projets IT avec des besoins mieux formalisés, une gouvernance plus claire et une structure de pilotage solide."
+                description: "Cadrez vos projets IT avec des besoins mieux formalisÃ©s, une gouvernance plus claire et une structure de pilotage solide."
             }
         },
         "blog-details.html": {
@@ -171,7 +171,7 @@
             },
             fr: {
                 name: "Article de blog",
-                description: "Lisez un article MHTECH Consulting sur la cybersécurité, le cloud, les opérations IT ou le staffing."
+                description: "Lisez un article MHTECH Consulting sur la cybersÃ©curitÃ©, le cloud, les opÃ©rations IT ou le staffing."
             }
         }
     };
@@ -213,6 +213,10 @@
         const params = new URLSearchParams(window.location.search);
         const urlLang = params.get("lang");
 
+        if (urlLang === "en") {
+            return "en";
+        }
+
         if (urlLang === "fr") {
             return "fr";
         }
@@ -220,11 +224,11 @@
         if (window.getI18n && typeof window.getI18n === "function") {
             const instance = window.getI18n();
             if (instance && typeof instance.getCurrentLang === "function") {
-                return instance.getCurrentLang() === "fr" ? "fr" : "en";
+                return instance.getCurrentLang() === "en" ? "en" : "fr";
             }
         }
 
-        return localStorage.getItem("mhtech_lang") === "fr" ? "fr" : "en";
+        return localStorage.getItem("mhtech_lang") === "en" ? "en" : "fr";
     }
 
     function getPageMeta(page, lang) {
@@ -242,8 +246,8 @@
             : new URL(page.replace(/\.html$/i, ""), SITE.origin + "/");
         const params = new URLSearchParams(extraParams || {});
 
-        if (lang === "fr") {
-            params.set("lang", "fr");
+        if (lang === "en") {
+            params.set("lang", "en");
         } else {
             params.delete("lang");
         }
@@ -382,7 +386,7 @@
             canonicalUrl: buildPageUrl(page, lang, extraParams),
             englishUrl: buildPageUrl(page, "en", extraParams),
             frenchUrl: buildPageUrl(page, "fr", extraParams),
-            xDefaultUrl: buildPageUrl(page, "en", extraParams),
+            xDefaultUrl: buildPageUrl(page, "fr", extraParams),
             image: SITE.logo
         };
 
@@ -600,8 +604,8 @@
             const hashPart = hrefMatch[3] || "";
             const params = new URLSearchParams(queryPart.replace(/^\?/, ""));
 
-            if (lang === "fr") {
-                params.set("lang", "fr");
+            if (lang === "en") {
+                params.set("lang", "en");
             } else {
                 params.delete("lang");
             }
@@ -667,3 +671,4 @@
 
     window.updateSeoHead = applySeo;
 })();
+

@@ -3061,3 +3061,14 @@ xs sidebar
     width: 440px;
   }
 }
+.thm-social-link1,
+.main-menu__social,
+.footer-widget__social,
+.mobile-nav__social,
+.team-two__social,
+.team-one__social,
+.blog-details__social,
+.service-details__sidebar-download-box,
+.blog-list__pagination {
+    display: none !important;
+}
