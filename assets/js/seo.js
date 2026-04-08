@@ -1,8 +1,8 @@
-﻿(function () {
+(function () {
     const SITE = {
         origin: "https://mhtechconsulting.com",
         name: "MHTECH Consulting",
-        logo: "https://mhtechconsulting.com/assets/images/resources/logo-1.png",
+        logo: "https://mhtechconsulting.com/assets/images/resources/mhtech-logo.png",
         email: "contact@mhtechconsulting.com",
         telephone: "+1 (248) 938 1944",
         telephoneHref: "+12489381944"

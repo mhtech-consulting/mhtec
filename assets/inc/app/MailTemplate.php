@@ -312,8 +312,8 @@ class MailTemplate
     private static function embedLogo(PHPMailer $mail): ?string
     {
         $candidatePaths = [
-            dirname(__DIR__, 2) . '/images/resources/logo-mhtech-email.png',
-            dirname(__DIR__, 2) . '/images/resources/logo-mhtech-header.svg'
+            dirname(__DIR__, 2) . '/images/resources/mhtech-logo.png',
+            dirname(__DIR__, 2) . '/images/resources/logo-mhtech-email.png'
         ];
 
         foreach ($candidatePaths as $logoPath) {
